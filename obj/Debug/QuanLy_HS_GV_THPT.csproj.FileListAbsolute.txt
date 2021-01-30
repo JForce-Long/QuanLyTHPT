@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.DangKy.resources
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.DangNhap.resources
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.ManHinhChinh.resources
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.Properties.Resources.resources
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyHS.resources
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyGV.resources
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\bin\Debug\QuanLy_HS_GV_THPT.exe.config
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\bin\Debug\QuanLy_HS_GV_THPT.exe
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\bin\Debug\QuanLy_HS_GV_THPT.pdb
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.exe
+C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
