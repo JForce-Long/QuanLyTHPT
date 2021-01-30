@@ -12,3 +12,19 @@ C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\bin\Debug\QuanLy_HS_GV_THPT.exe
 C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\bin\Debug\QuanLy_HS_GV_THPT.pdb
 C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.exe
 C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
+E:\Thực Tập nhóm\QLTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe.config
+E:\Thực Tập nhóm\QLTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe
+E:\Thực Tập nhóm\QLTHPT\bin\Debug\QuanLy_HS_GV_THPT.pdb
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.csprojAssemblyReference.cache
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangKy.resources
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangNhap.resources
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.ManHinhChinh.resources
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.Properties.Resources.resources
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyHS.resources
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyGV.resources
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateResource.cache
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.exe
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyLop.resources
+E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.Thông_Tin_Giảng_Dạy.resources

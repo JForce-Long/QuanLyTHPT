@@ -18,7 +18,7 @@ namespace QuanLy_HS_GV_THPT
         SqlConnection connection;
         SqlCommand command;
         string dataSource = @"Data Source=DESKTOP-C33GCG4;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
-        SqlDataReader sqlReader;
+        //SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
         //Datasourse (khac nhau)
@@ -51,19 +51,6 @@ namespace QuanLy_HS_GV_THPT
              loadData();
          }
 
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            
-            int i;
-            i = dataGridView1.CurrentRow.Index;
-            txtMaGV.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
-            txtTenGV.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
-            dtpDate.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
-            txtDiaChi.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
-            txtGioiTinh.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
-            txtPhone.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
-        
-        }
 
         private void ReturnGV_Click(object sender, EventArgs e)
         {
@@ -72,5 +59,16 @@ namespace QuanLy_HS_GV_THPT
             manhinhchinh.ShowDialog();
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            i = dataGridView1.CurrentRow.Index;
+            txtMaGV.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
+            txtTenGV.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
+            dtpDate.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
+            txtDiaChi.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
+            txtGioiTinh.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
+            txtPhone.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
+        }
     }
 }

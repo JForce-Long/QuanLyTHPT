@@ -17,7 +17,7 @@ namespace QuanLy_HS_GV_THPT
         SqlConnection connection;
         SqlCommand command;
         string dataSource = @"Data Source=DESKTOP-C33GCG4;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
-        SqlDataReader sqlReader;
+       // SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
         //Datasourse (khac nhau)

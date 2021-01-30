@@ -30,7 +30,6 @@ namespace QuanLy_HS_GV_THPT
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyGV));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.ReturnGV = new System.Windows.Forms.Button();
             this.TimKiem = new System.Windows.Forms.Button();
@@ -50,24 +49,14 @@ namespace QuanLy_HS_GV_THPT
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(277, -1);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(522, 451);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Controls.Add(this.ReturnGV);
             this.groupBox2.Controls.Add(this.TimKiem);
             this.groupBox2.Controls.Add(this.Xoa);
@@ -88,7 +77,7 @@ namespace QuanLy_HS_GV_THPT
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(1, -1);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(270, 451);
+            this.groupBox2.Size = new System.Drawing.Size(801, 451);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
@@ -265,12 +254,13 @@ namespace QuanLy_HS_GV_THPT
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(275, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(522, 451);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.Size = new System.Drawing.Size(526, 451);
+            this.dataGridView1.TabIndex = 17;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // QuanLyGV
             // 
@@ -278,10 +268,9 @@ namespace QuanLy_HS_GV_THPT
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Name = "QuanLyGV";
             this.Text = "QuanLyGV";
-            this.groupBox1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.QuanLyGV_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -290,8 +279,6 @@ namespace QuanLy_HS_GV_THPT
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtMaGV;
         private System.Windows.Forms.TextBox txtTenGV;

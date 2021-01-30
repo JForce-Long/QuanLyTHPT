@@ -49,5 +49,19 @@ namespace QuanLy_HS_GV_THPT
             DangNhap dangNhap = new DangNhap();
             dangNhap.ShowDialog();
         }
+
+        private void QLLOP_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            QuanLyLop quanlylop = new QuanLyLop();
+            quanlylop.ShowDialog();
+        }
+
+        private void TTGD_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Thông_Tin_Giảng_Dạy ttgd = new Thông_Tin_Giảng_Dạy();
+            ttgd.ShowDialog();
+        }
     }
 }

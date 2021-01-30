@@ -46,9 +46,9 @@ namespace QuanLy_HS_GV_THPT
             this.GioiTinh = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -132,7 +132,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             // Xoa
             // 
-            this.Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Xoa.Image = ((System.Drawing.Image)(resources.GetObject("Xoa.Image")));
             this.Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Xoa.Location = new System.Drawing.Point(182, 336);
@@ -145,7 +145,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             // TimKiem
             // 
-            this.TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimKiem.Image = ((System.Drawing.Image)(resources.GetObject("TimKiem.Image")));
             this.TimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.TimKiem.Location = new System.Drawing.Point(182, 407);
@@ -158,7 +158,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             // Sua
             // 
-            this.Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sua.Image = ((System.Drawing.Image)(resources.GetObject("Sua.Image")));
             this.Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Sua.Location = new System.Drawing.Point(25, 407);
@@ -171,7 +171,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             // Them
             // 
-            this.Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Them.Image = ((System.Drawing.Image)(resources.GetObject("Them.Image")));
             this.Them.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Them.Location = new System.Drawing.Point(25, 336);
@@ -263,6 +263,7 @@ namespace QuanLy_HS_GV_THPT
             this.Controls.Add(this.groupBox1);
             this.Name = "QuanLyHS";
             this.Text = "QuanLyHS";
+            this.Load += new System.EventHandler(this.QuanLyHS_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -274,8 +275,6 @@ namespace QuanLy_HS_GV_THPT
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtMaHS;
         private System.Windows.Forms.TextBox txtTenHS;
         private System.Windows.Forms.TextBox txtDiaChi;
@@ -292,5 +291,7 @@ namespace QuanLy_HS_GV_THPT
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ComboBox txtGioiTinh;
         private System.Windows.Forms.Button ReturnHS;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
