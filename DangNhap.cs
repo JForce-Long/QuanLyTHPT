@@ -21,7 +21,7 @@ namespace QuanLy_HS_GV_THPT
 
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-C33GCG4;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True");
+            SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-152SFQ3;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True");
             try
             {
                 connection.Open();
