@@ -17,7 +17,7 @@ namespace QuanLy_HS_GV_THPT
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
-        string dataSource = @"Data Source=DESKTOP-152SFQ3;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+        string dataSource = @"Data Source=DESKTOP-62LKBUM;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
         //SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
@@ -78,6 +78,15 @@ namespace QuanLy_HS_GV_THPT
             command.ExecuteNonQuery();
 
             command.CommandText = "delete from GIAOVIEN where MaGV ='" + txtMaGV.Text + "'";
+            command.ExecuteNonQuery();
+            loadData();
+        }
+
+        private void Sua_Click(object sender, EventArgs e)
+        {
+            txtMaGV.ReadOnly = true;
+            command = connection.CreateCommand();
+            command.CommandText = "update GIAOVIEN set MaGV = N'" + txtMaGV.Text + "', TenGV = '" + txtTenGV.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text + "' where MaGV = '" + txtMaGV.Text + "'";
             command.ExecuteNonQuery();
             loadData();
         }

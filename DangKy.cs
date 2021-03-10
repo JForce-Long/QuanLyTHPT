@@ -14,7 +14,7 @@ namespace QuanLy_HS_GV_THPT
     public partial class DangKy : Form
     {
         //Data source(khac nhau)
-        string dataSource = @"Data Source=DESKTOP-C33GCG4;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+        string dataSource = @"Data Source=DESKTOP-62LKBUM;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
         SqlConnection connection;
         SqlCommand command;
         public DangKy()

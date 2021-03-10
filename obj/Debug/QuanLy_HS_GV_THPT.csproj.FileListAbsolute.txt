@@ -44,3 +44,19 @@ D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateRe
 D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
 D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.exe
 D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe.config
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.pdb
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csprojAssemblyReference.cache
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangKy.resources
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangNhap.resources
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.ManHinhChinh.resources
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyHS.resources
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyGV.resources
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyLop.resources
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Thông_Tin_Giảng_Dạy.resources
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateResource.cache
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.exe
+C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.pdb

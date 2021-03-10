@@ -76,9 +76,9 @@ namespace QuanLy_HS_GV_THPT
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(1, -1);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(601, 366);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -87,7 +87,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(206, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -100,7 +100,7 @@ namespace QuanLy_HS_GV_THPT
             this.ReturnGV.BackColor = System.Drawing.Color.White;
             this.ReturnGV.Image = ((System.Drawing.Image)(resources.GetObject("ReturnGV.Image")));
             this.ReturnGV.Location = new System.Drawing.Point(0, 0);
-            this.ReturnGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ReturnGV.Margin = new System.Windows.Forms.Padding(2);
             this.ReturnGV.Name = "ReturnGV";
             this.ReturnGV.Size = new System.Drawing.Size(33, 30);
             this.ReturnGV.TabIndex = 16;
@@ -113,7 +113,7 @@ namespace QuanLy_HS_GV_THPT
             this.TimKiem.Image = ((System.Drawing.Image)(resources.GetObject("TimKiem.Image")));
             this.TimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.TimKiem.Location = new System.Drawing.Point(122, 336);
-            this.TimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.TimKiem.Name = "TimKiem";
             this.TimKiem.Size = new System.Drawing.Size(59, 25);
             this.TimKiem.TabIndex = 15;
@@ -127,7 +127,7 @@ namespace QuanLy_HS_GV_THPT
             this.Xoa.Image = ((System.Drawing.Image)(resources.GetObject("Xoa.Image")));
             this.Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Xoa.Location = new System.Drawing.Point(122, 286);
-            this.Xoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Xoa.Margin = new System.Windows.Forms.Padding(2);
             this.Xoa.Name = "Xoa";
             this.Xoa.Size = new System.Drawing.Size(65, 24);
             this.Xoa.TabIndex = 14;
@@ -142,13 +142,14 @@ namespace QuanLy_HS_GV_THPT
             this.Sua.Image = ((System.Drawing.Image)(resources.GetObject("Sua.Image")));
             this.Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Sua.Location = new System.Drawing.Point(8, 336);
-            this.Sua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Sua.Margin = new System.Windows.Forms.Padding(2);
             this.Sua.Name = "Sua";
             this.Sua.Size = new System.Drawing.Size(68, 25);
             this.Sua.TabIndex = 13;
             this.Sua.Text = "Sửa";
             this.Sua.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Sua.UseVisualStyleBackColor = true;
+            this.Sua.Click += new System.EventHandler(this.Sua_Click);
             // 
             // Them
             // 
@@ -156,7 +157,7 @@ namespace QuanLy_HS_GV_THPT
             this.Them.Image = ((System.Drawing.Image)(resources.GetObject("Them.Image")));
             this.Them.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Them.Location = new System.Drawing.Point(8, 286);
-            this.Them.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Them.Margin = new System.Windows.Forms.Padding(2);
             this.Them.Name = "Them";
             this.Them.Size = new System.Drawing.Size(68, 24);
             this.Them.TabIndex = 12;
@@ -168,7 +169,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDate.Location = new System.Drawing.Point(72, 170);
-            this.dtpDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(110, 22);
             this.dtpDate.TabIndex = 11;
@@ -180,7 +181,7 @@ namespace QuanLy_HS_GV_THPT
             "Nam",
             "Nữ"});
             this.txtGioiTinh.Location = new System.Drawing.Point(72, 127);
-            this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(2);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Size = new System.Drawing.Size(110, 24);
             this.txtGioiTinh.TabIndex = 10;
@@ -188,7 +189,7 @@ namespace QuanLy_HS_GV_THPT
             // txtMaGV
             // 
             this.txtMaGV.Location = new System.Drawing.Point(72, 39);
-            this.txtMaGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaGV.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaGV.Name = "txtMaGV";
             this.txtMaGV.Size = new System.Drawing.Size(110, 22);
             this.txtMaGV.TabIndex = 9;
@@ -196,7 +197,7 @@ namespace QuanLy_HS_GV_THPT
             // txtTenGV
             // 
             this.txtTenGV.Location = new System.Drawing.Point(72, 85);
-            this.txtTenGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenGV.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenGV.Name = "txtTenGV";
             this.txtTenGV.Size = new System.Drawing.Size(110, 22);
             this.txtTenGV.TabIndex = 8;
@@ -204,7 +205,7 @@ namespace QuanLy_HS_GV_THPT
             // txtPhone
             // 
             this.txtPhone.Location = new System.Drawing.Point(72, 209);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(110, 22);
             this.txtPhone.TabIndex = 7;
@@ -212,7 +213,7 @@ namespace QuanLy_HS_GV_THPT
             // txtDiaChi
             // 
             this.txtDiaChi.Location = new System.Drawing.Point(72, 248);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(110, 22);
             this.txtDiaChi.TabIndex = 6;
@@ -289,7 +290,7 @@ namespace QuanLy_HS_GV_THPT
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.groupBox2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "QuanLyGV";
             this.Text = "QuanLyGV";
             this.Load += new System.EventHandler(this.QuanLyGV_Load);
