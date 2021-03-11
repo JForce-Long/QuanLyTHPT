@@ -17,7 +17,7 @@ namespace QuanLy_HS_GV_THPT
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
-        string dataSource = @"Data Source=DESKTOP-C33GCG4;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+        string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
         //SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
@@ -65,10 +65,30 @@ namespace QuanLy_HS_GV_THPT
             i = dataGridView1.CurrentRow.Index;
             txtMaGV.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
             txtTenGV.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
-            dtpDate.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
-            txtDiaChi.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
-            txtGioiTinh.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
-            txtPhone.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
+            txtGioiTinh.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
+            dtpDate.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
+            txtPhone.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
+            txtDiaChi.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
+        }
+
+        private void Xoa_Click(object sender, EventArgs e)
+        {
+            command = connection.CreateCommand();
+            command.CommandText = "update LOP set MaGV = null where MaGV = '" + txtMaGV.Text + "'";
+            command.ExecuteNonQuery();
+
+            command.CommandText = "delete from GIAOVIEN where MaGV ='" + txtMaGV.Text + "'";
+            command.ExecuteNonQuery();
+            loadData();
+        }
+
+        private void Sua_Click(object sender, EventArgs e)
+        {
+            txtMaGV.ReadOnly = true;
+            command = connection.CreateCommand();
+            command.CommandText = "update GIAOVIEN set MaGV = N'" + txtMaGV.Text + "', TenGV = '" + txtTenGV.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text + "' where MaGV = '" + txtMaGV.Text + "'";
+            command.ExecuteNonQuery();
+            loadData();
         }
     }
 }

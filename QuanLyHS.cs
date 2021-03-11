@@ -16,7 +16,7 @@ namespace QuanLy_HS_GV_THPT
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
-        string dataSource = @"Data Source=DESKTOP-C33GCG4;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+        string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
        // SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
@@ -55,8 +55,8 @@ namespace QuanLy_HS_GV_THPT
             i = dataGridView1.CurrentRow.Index;
             txtMaHS.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
             txtTenHS.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
-            txtDiaChi.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
-            txtGioiTinh.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
+            txtGioiTinh.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
+            txtDiaChi.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
             txtPhone.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
 
         }
@@ -73,6 +73,26 @@ namespace QuanLy_HS_GV_THPT
             manhinhchinh.ShowDialog();
         }
 
-        
+        private void Xoa_Click(object sender, EventArgs e)
+        {
+            command = connection.CreateCommand();
+            command.CommandText = "delete from HOCSINH where MaHS ='" + txtMaHS.Text + "'";
+            command.ExecuteNonQuery();
+            loadData();
+        }
+
+        private void Sua_Click(object sender, EventArgs e)
+        {
+            txtMaHS.ReadOnly = true;
+            command = connection.CreateCommand();
+            command.CommandText = "update HOCSINH set MaHS = N'" + txtMaHS.Text + "', TenHS = '" + txtTenHS.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text +  "' where MaHS = '" + txtMaHS.Text + "'";
+            command.ExecuteNonQuery();
+            loadData();
+        }
+
+        private void txtGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

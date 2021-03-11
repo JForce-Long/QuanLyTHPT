@@ -74,8 +74,10 @@ namespace QuanLy_HS_GV_THPT
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 1);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(299, 448);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(224, 364);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -83,9 +85,10 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.ReturnHS.BackColor = System.Drawing.Color.White;
             this.ReturnHS.Image = ((System.Drawing.Image)(resources.GetObject("ReturnHS.Image")));
-            this.ReturnHS.Location = new System.Drawing.Point(6, 2);
+            this.ReturnHS.Location = new System.Drawing.Point(4, 2);
+            this.ReturnHS.Margin = new System.Windows.Forms.Padding(2);
             this.ReturnHS.Name = "ReturnHS";
-            this.ReturnHS.Size = new System.Drawing.Size(48, 35);
+            this.ReturnHS.Size = new System.Drawing.Size(36, 28);
             this.ReturnHS.TabIndex = 14;
             this.ReturnHS.UseVisualStyleBackColor = false;
             this.ReturnHS.Click += new System.EventHandler(this.ReturnHS_Click);
@@ -96,38 +99,44 @@ namespace QuanLy_HS_GV_THPT
             this.txtGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.txtGioiTinh.Location = new System.Drawing.Point(110, 151);
+            this.txtGioiTinh.Location = new System.Drawing.Point(82, 123);
+            this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(2);
             this.txtGioiTinh.Name = "txtGioiTinh";
-            this.txtGioiTinh.Size = new System.Drawing.Size(134, 28);
+            this.txtGioiTinh.Size = new System.Drawing.Size(102, 24);
             this.txtGioiTinh.TabIndex = 13;
+            this.txtGioiTinh.SelectedIndexChanged += new System.EventHandler(this.txtGioiTinh_SelectedIndexChanged);
             // 
             // txtMaHS
             // 
-            this.txtMaHS.Location = new System.Drawing.Point(110, 49);
+            this.txtMaHS.Location = new System.Drawing.Point(82, 40);
+            this.txtMaHS.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaHS.Name = "txtMaHS";
-            this.txtMaHS.Size = new System.Drawing.Size(134, 25);
+            this.txtMaHS.Size = new System.Drawing.Size(102, 22);
             this.txtMaHS.TabIndex = 12;
             // 
             // txtTenHS
             // 
-            this.txtTenHS.Location = new System.Drawing.Point(110, 99);
+            this.txtTenHS.Location = new System.Drawing.Point(82, 80);
+            this.txtTenHS.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenHS.Name = "txtTenHS";
-            this.txtTenHS.Size = new System.Drawing.Size(134, 25);
+            this.txtTenHS.Size = new System.Drawing.Size(102, 22);
             this.txtTenHS.TabIndex = 11;
             this.txtTenHS.TextChanged += new System.EventHandler(this.txtTenHS_TextChanged);
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(110, 211);
+            this.txtDiaChi.Location = new System.Drawing.Point(82, 171);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(134, 25);
+            this.txtDiaChi.Size = new System.Drawing.Size(102, 22);
             this.txtDiaChi.TabIndex = 10;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(110, 258);
+            this.txtPhone.Location = new System.Drawing.Point(82, 210);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(134, 25);
+            this.txtPhone.Size = new System.Drawing.Size(102, 22);
             this.txtPhone.TabIndex = 9;
             // 
             // Xoa
@@ -135,22 +144,25 @@ namespace QuanLy_HS_GV_THPT
             this.Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Xoa.Image = ((System.Drawing.Image)(resources.GetObject("Xoa.Image")));
             this.Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Xoa.Location = new System.Drawing.Point(182, 336);
+            this.Xoa.Location = new System.Drawing.Point(136, 273);
+            this.Xoa.Margin = new System.Windows.Forms.Padding(2);
             this.Xoa.Name = "Xoa";
-            this.Xoa.Size = new System.Drawing.Size(73, 35);
+            this.Xoa.Size = new System.Drawing.Size(55, 28);
             this.Xoa.TabIndex = 8;
             this.Xoa.Text = "Xóa";
             this.Xoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Xoa.UseVisualStyleBackColor = true;
+            this.Xoa.Click += new System.EventHandler(this.Xoa_Click);
             // 
             // TimKiem
             // 
             this.TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimKiem.Image = ((System.Drawing.Image)(resources.GetObject("TimKiem.Image")));
             this.TimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.TimKiem.Location = new System.Drawing.Point(182, 407);
+            this.TimKiem.Location = new System.Drawing.Point(136, 331);
+            this.TimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.TimKiem.Name = "TimKiem";
-            this.TimKiem.Size = new System.Drawing.Size(73, 30);
+            this.TimKiem.Size = new System.Drawing.Size(55, 24);
             this.TimKiem.TabIndex = 7;
             this.TimKiem.Text = "Tìm Kiếm";
             this.TimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -161,22 +173,25 @@ namespace QuanLy_HS_GV_THPT
             this.Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sua.Image = ((System.Drawing.Image)(resources.GetObject("Sua.Image")));
             this.Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Sua.Location = new System.Drawing.Point(25, 407);
+            this.Sua.Location = new System.Drawing.Point(19, 331);
+            this.Sua.Margin = new System.Windows.Forms.Padding(2);
             this.Sua.Name = "Sua";
-            this.Sua.Size = new System.Drawing.Size(83, 30);
+            this.Sua.Size = new System.Drawing.Size(62, 24);
             this.Sua.TabIndex = 6;
             this.Sua.Text = "Sửa";
             this.Sua.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Sua.UseVisualStyleBackColor = true;
+            this.Sua.Click += new System.EventHandler(this.Sua_Click);
             // 
             // Them
             // 
             this.Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Them.Image = ((System.Drawing.Image)(resources.GetObject("Them.Image")));
             this.Them.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Them.Location = new System.Drawing.Point(25, 336);
+            this.Them.Location = new System.Drawing.Point(19, 273);
+            this.Them.Margin = new System.Windows.Forms.Padding(2);
             this.Them.Name = "Them";
-            this.Them.Size = new System.Drawing.Size(83, 35);
+            this.Them.Size = new System.Drawing.Size(62, 28);
             this.Them.TabIndex = 5;
             this.Them.Text = "Thêm";
             this.Them.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -186,9 +201,10 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 258);
+            this.label5.Location = new System.Drawing.Point(9, 210);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 20);
+            this.label5.Size = new System.Drawing.Size(54, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Phone";
             // 
@@ -196,9 +212,10 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 211);
+            this.label4.Location = new System.Drawing.Point(9, 171);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 20);
+            this.label4.Size = new System.Drawing.Size(60, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "Địa Chỉ";
             // 
@@ -206,9 +223,10 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.GioiTinh.AutoSize = true;
             this.GioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GioiTinh.Location = new System.Drawing.Point(2, 151);
+            this.GioiTinh.Location = new System.Drawing.Point(2, 123);
+            this.GioiTinh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.Size = new System.Drawing.Size(85, 20);
+            this.GioiTinh.Size = new System.Drawing.Size(74, 17);
             this.GioiTinh.TabIndex = 2;
             this.GioiTinh.Text = "Giới Tính";
             // 
@@ -216,9 +234,10 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(6, 99);
+            this.label.Location = new System.Drawing.Point(4, 80);
+            this.label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(72, 20);
+            this.label.Size = new System.Drawing.Size(62, 17);
             this.label.TabIndex = 1;
             this.label.Text = "Tên HS";
             // 
@@ -226,18 +245,21 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 49);
+            this.label1.Location = new System.Drawing.Point(9, 40);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 20);
+            this.label1.Size = new System.Drawing.Size(55, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã HS";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(305, 1);
+            this.groupBox2.Location = new System.Drawing.Point(229, 1);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(494, 448);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(370, 364);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
@@ -245,22 +267,22 @@ namespace QuanLy_HS_GV_THPT
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-5, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(494, 448);
+            this.dataGridView1.Size = new System.Drawing.Size(374, 364);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // QuanLyHS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "QuanLyHS";
             this.Text = "QuanLyHS";
             this.Load += new System.EventHandler(this.QuanLyHS_Load);
