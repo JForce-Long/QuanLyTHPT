@@ -35,7 +35,6 @@ namespace QuanLy_HS_GV_THPT
             this.label2 = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.Button();
             this.TTGD = new System.Windows.Forms.Button();
-            this.QLLOP = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // QLGV
@@ -93,7 +92,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.TTGD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TTGD.ForeColor = System.Drawing.Color.Red;
-            this.TTGD.Location = new System.Drawing.Point(93, 211);
+            this.TTGD.Location = new System.Drawing.Point(298, 215);
             this.TTGD.Name = "TTGD";
             this.TTGD.Size = new System.Drawing.Size(194, 75);
             this.TTGD.TabIndex = 5;
@@ -101,24 +100,11 @@ namespace QuanLy_HS_GV_THPT
             this.TTGD.UseVisualStyleBackColor = true;
             this.TTGD.Click += new System.EventHandler(this.TTGD_Click);
             // 
-            // QLLOP
-            // 
-            this.QLLOP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QLLOP.ForeColor = System.Drawing.Color.Red;
-            this.QLLOP.Location = new System.Drawing.Point(487, 211);
-            this.QLLOP.Name = "QLLOP";
-            this.QLLOP.Size = new System.Drawing.Size(193, 75);
-            this.QLLOP.TabIndex = 6;
-            this.QLLOP.Text = "Quản Lý Lớp";
-            this.QLLOP.UseVisualStyleBackColor = true;
-            this.QLLOP.Click += new System.EventHandler(this.QLLOP_Click);
-            // 
             // ManHinhChinh
             // 
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(801, 485);
-            this.Controls.Add(this.QLLOP);
             this.Controls.Add(this.TTGD);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.label2);
@@ -137,6 +123,5 @@ namespace QuanLy_HS_GV_THPT
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button TTGD;
-        private System.Windows.Forms.Button QLLOP;
     }
 }

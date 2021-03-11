@@ -60,3 +60,18 @@ C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THP
 C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.exe
 C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe.config
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.pdb
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csprojAssemblyReference.cache
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangKy.resources
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangNhap.resources
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.ManHinhChinh.resources
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Properties.Resources.resources
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyHS.resources
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyGV.resources
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Thông_Tin_Giảng_Dạy.resources
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateResource.cache
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.exe
+D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.pdb

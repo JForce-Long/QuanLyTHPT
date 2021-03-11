@@ -50,12 +50,6 @@ namespace QuanLy_HS_GV_THPT
             dangNhap.ShowDialog();
         }
 
-        private void QLLOP_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            QuanLyLop quanlylop = new QuanLyLop();
-            quanlylop.ShowDialog();
-        }
 
         private void TTGD_Click(object sender, EventArgs e)
         {
