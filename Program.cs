@@ -16,7 +16,7 @@ namespace QuanLy_HS_GV_THPT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Helper.Helper());
+            Application.Run(new Helper.Helpers());
         }
     }
 }

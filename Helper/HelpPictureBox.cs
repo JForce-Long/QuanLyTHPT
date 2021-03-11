@@ -15,10 +15,17 @@ namespace Helper
         Graphics g;
         int currentIndex = 0;
         int[] maxIndex = new int[4] { 1, 2, 1, 1 };
-        IMAGESTATE currentState = IMAGESTATE.ADDHELPER;
-        string[,] helpString = new string[4, 3] 
+        HELPERSTATE currentState = HELPERSTATE.ADDHELPER;
+        string[,] helpStringStudent = new string[4, 3] 
         { 
             { "B1: Điền thông tin nhân viên cần thêm vào các bảng", "B2: Nhấp chuột trái vào nút Thêm để thêm nhân viên vào cơ sở dữ liệu","" }, 
+            { "B1: Nhấp chuột trái 2 lần vào dòng nhân viên cần sửa", "B2: Thay đổi thông tin ở trên các bảng","B3: Nhấp chuột trái vào nút Sửa để cập nhập lại thông tin nhân viên" },
+            { "B1: Nhấp chuột trái 2 lần vào dòng nhân viên cần xoá", "B2: Nhấp chuột trái vào nút Xoá để xoá nhân viên khỏi cơ sở dữ liệu","" },
+            { "B1: Điền thông tin nhân viên cần tìm kiếm vào bảng", "B2: Nhấp chuột trái vào nút tìm kiếm để in ra thông tin của các nhân viên tương đồng với thông tin đã nhập","" }
+        };
+        string[,] helpStringTeacher = new string[4, 3]
+        {
+            { "B1: Điền thông tin nhân viên cần thêm vào các bảng", "B2: Nhấp chuột trái vào nút Thêm để thêm nhân viên vào cơ sở dữ liệu","" },
             { "B1: Nhấp chuột trái 2 lần vào dòng nhân viên cần sửa", "B2: Thay đổi thông tin ở trên các bảng","B3: Nhấp chuột trái vào nút Sửa để cập nhập lại thông tin nhân viên" },
             { "B1: Nhấp chuột trái 2 lần vào dòng nhân viên cần xoá", "B2: Nhấp chuột trái vào nút Xoá để xoá nhân viên khỏi cơ sở dữ liệu","" },
             { "B1: Điền thông tin nhân viên cần tìm kiếm vào bảng", "B2: Nhấp chuột trái vào nút tìm kiếm để in ra thông tin của các nhân viên tương đồng với thông tin đã nhập","" }
@@ -43,12 +50,12 @@ namespace Helper
 
         private void setImage(string filename)
         {
-            helpLabel.Text = helpString[(int)currentState,currentIndex];
+            helpLabel.Text = helpStringStudent[(int)currentState,currentIndex];
             checkLabeOverflow();
             helperPic.Image = Image.FromFile(Application.StartupPath + filename);
             helperPic.SizeMode = PictureBoxSizeMode.StretchImage;
         }
-        public void updateInformation(IMAGESTATE state, int index = 0)
+        public void updateInformation(HELPERSTATE state, int index = 0)
         {
             //Pass
             if (index > maxIndex[(int)currentState] || index < 0) return;
@@ -59,16 +66,16 @@ namespace Helper
             FillProgressBar(index);
             switch (state)
             {
-                case IMAGESTATE.ADDHELPER:
+                case HELPERSTATE.ADDHELPER:
                     setImage("\\Image\\add" + index + ".png");
                     return;
-                case IMAGESTATE.DELETEHELPER:
+                case HELPERSTATE.DELETEHELPER:
                     setImage("\\Image\\delete" + index + ".png");
                     return;
-                case IMAGESTATE.EDITHELPER:
+                case HELPERSTATE.EDITHELPER:
                     setImage("\\Image\\edit" + index + ".png");
                     return;
-                case IMAGESTATE.SEARCHHELPER:
+                case HELPERSTATE.SEARCHHELPER:
                     setImage("\\Image\\search" + index + ".png");
                     return;
             }

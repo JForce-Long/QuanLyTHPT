@@ -9,7 +9,12 @@ using QuanLy_HS_GV_THPT;
 
 namespace Helper
 {
-    public enum IMAGESTATE : int
+    public enum CATSTATE : int
+    {
+        TEACHER = 0,
+        STUDENT = 1,
+    }
+    public enum HELPERSTATE : int
     {
         ADDHELPER = 0,
         EDITHELPER = 1,

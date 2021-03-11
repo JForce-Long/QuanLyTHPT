@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Helper
 {
-    public partial class Helper : Form
+    public partial class Helpers : Form
     {
         Button CurrentButton;
-        public Helper()
+        public Helpers()
         {
             InitializeComponent();
-            btnClick(addHelpBTN);
-            helpBox.updateInformation(IMAGESTATE.ADDHELPER);
+            btnClick(addStHelperBTN);
+            helpBox.updateInformation(HELPERSTATE.ADDHELPER);
         }
         void btnClick(Button btn)
         {
@@ -32,29 +32,48 @@ namespace Helper
             Utilities.setButtonState(false, ref CurrentButton);
             CurrentButton = btn;
             Utilities.setButtonState(true, ref CurrentButton);
-        }     
-        private void addHelpBTN_Click(object sender, EventArgs e)
+        }
+        #region HocSinh
+        private void addStHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
-            helpBox.updateInformation(IMAGESTATE.ADDHELPER);
         }
 
-        private void editHelpBTN_Click(object sender, EventArgs e)
+        private void editStHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
-            helpBox.updateInformation(IMAGESTATE.EDITHELPER);
         }
 
-        private void deleteHelpBTN_Click(object sender, EventArgs e)
+        private void delStHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
-            helpBox.updateInformation(IMAGESTATE.DELETEHELPER);
         }
 
-        private void searchHelperBTN_Click(object sender, EventArgs e)
+        private void searchStHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
-            helpBox.updateInformation(IMAGESTATE.SEARCHHELPER);
         }
+        #endregion
+        #region GiaoVien
+        private void addTeacherHelperBTN_Click(object sender, EventArgs e)
+        {
+            btnClick((Button)sender);
+        }
+
+        private void editTeacherHelperBTN_Click(object sender, EventArgs e)
+        {
+            btnClick((Button)sender);
+        }
+
+        private void delTeacherHelperBTN_Click(object sender, EventArgs e)
+        {
+            btnClick((Button)sender);
+        }
+
+        private void searchTeacherHelperBTN_Click(object sender, EventArgs e)
+        {
+            btnClick((Button)sender);
+        }
+        #endregion
     }
 }
