@@ -101,13 +101,11 @@ namespace QuanLy_HS_GV_THPT
             command.ExecuteNonQuery();
             loadData();
         }
-
-<<<<<<< HEAD
         private void helpBTN_Click(object sender, EventArgs e)
         {
             var helperDialog = new Helper.Helpers();
             helperDialog.ShowDialog();
-=======
+        }
         private void Them_Click(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
@@ -133,8 +131,6 @@ namespace QuanLy_HS_GV_THPT
                 command.ExecuteNonQuery();
                 loadData();
             }
-
->>>>>>> 0b26bf78321791e3995c5789bd3e1f572c0986ae
         }
     }
 }
