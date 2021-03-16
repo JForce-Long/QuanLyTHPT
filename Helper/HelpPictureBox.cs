@@ -27,7 +27,7 @@ namespace Helper
         string[,] helpStringTeacher = new string[4, 3]
         {
             { "B1: Điền thông tin giáo viên cần thêm vào các bảng", "B2: Nhấp chuột trái vào nút Thêm để thêm giáo viên vào cơ sở dữ liệu","" },
-            { "B1: Nhấp chuột trái 2 lần vào dòng giáo viên cần sửa trong bảng hoặc gõ mã học sinh vào trong ô", "B2: Thay đổi thông tin ở trên các bảng","B3: Nhấp chuột trái vào nút Sửa để cập nhập lại thông tin giáo viên" },
+            { "B1: Nhấp chuột trái 2 lần vào dòng giáo viên cần sửa trong bảng hoặc gõ mã giáo viên vào trong ô", "B2: Thay đổi thông tin ở trên các bảng","B3: Nhấp chuột trái vào nút Sửa để cập nhập lại thông tin giáo viên" },
             { "B1: Nhấp chuột trái 2 lần vào dòng giáo viên cần xoá", "B2: Nhấp chuột trái vào nút Xoá để xoá giáo viên khỏi cơ sở dữ liệu","" },
             { "B1: Điền thông tin giáo viên cần tìm kiếm vào bảng", "B2: Nhấp chuột trái vào nút tìm kiếm để in ra thông tin của các giáo viên tương đồng với thông tin đã nhập","" }
         };
