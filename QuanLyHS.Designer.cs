@@ -52,6 +52,12 @@ namespace QuanLy_HS_GV_THPT
             this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+<<<<<<< HEAD
+=======
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.helpBTN = new System.Windows.Forms.Button();
+>>>>>>> 24637f67e61030294104869f10be1e5c50b3e3ba
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -59,11 +65,15 @@ namespace QuanLy_HS_GV_THPT
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Orange;
+<<<<<<< HEAD
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtDate);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.txtTimKiem);
             this.groupBox1.Controls.Add(this.reset);
+=======
+            this.groupBox1.Controls.Add(this.helpBTN);
+>>>>>>> 24637f67e61030294104869f10be1e5c50b3e3ba
             this.groupBox1.Controls.Add(this.ReturnHS);
             this.groupBox1.Controls.Add(this.txtGioiTinh);
             this.groupBox1.Controls.Add(this.txtMaHS);
@@ -308,6 +318,44 @@ namespace QuanLy_HS_GV_THPT
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã HS";
             // 
+<<<<<<< HEAD
+=======
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Location = new System.Drawing.Point(229, 1);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(370, 364);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(374, 364);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
+            // helpBTN
+            // 
+            this.helpBTN.BackColor = System.Drawing.Color.White;
+            this.helpBTN.Image = global::QuanLy_HS_GV_THPT.Properties.Resources.help;
+            this.helpBTN.Location = new System.Drawing.Point(187, 6);
+            this.helpBTN.Margin = new System.Windows.Forms.Padding(2);
+            this.helpBTN.Name = "helpBTN";
+            this.helpBTN.Size = new System.Drawing.Size(33, 30);
+            this.helpBTN.TabIndex = 19;
+            this.helpBTN.UseVisualStyleBackColor = false;
+            this.helpBTN.Click += new System.EventHandler(this.helpBTN_Click);
+            // 
+>>>>>>> 24637f67e61030294104869f10be1e5c50b3e3ba
             // QuanLyHS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -345,9 +393,13 @@ namespace QuanLy_HS_GV_THPT
         private System.Windows.Forms.ComboBox txtGioiTinh;
         private System.Windows.Forms.Button ReturnHS;
         private System.Windows.Forms.DataGridView dataGridView1;
+<<<<<<< HEAD
         private System.Windows.Forms.Button reset;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker txtDate;
+=======
+        private System.Windows.Forms.Button helpBTN;
+>>>>>>> 24637f67e61030294104869f10be1e5c50b3e3ba
     }
 }

@@ -21,7 +21,7 @@ namespace QuanLy_HS_GV_THPT
 
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True");
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
             try
             {
                 connection.Open();
@@ -44,9 +44,9 @@ namespace QuanLy_HS_GV_THPT
                     MessageBox.Show("Đăng nhập thất bại!");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Lỗi kết nối");
+                MessageBox.Show("Lỗi kết nối\n" + ex.Message);
             }
         }
 

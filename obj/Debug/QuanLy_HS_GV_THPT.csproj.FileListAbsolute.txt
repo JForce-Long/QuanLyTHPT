@@ -1,77 +1,17 @@
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.csprojAssemblyReference.cache
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.DangKy.resources
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.DangNhap.resources
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.ManHinhChinh.resources
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.Properties.Resources.resources
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyHS.resources
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyGV.resources
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateResource.cache
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\bin\Debug\QuanLy_HS_GV_THPT.exe.config
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\bin\Debug\QuanLy_HS_GV_THPT.exe
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\bin\Debug\QuanLy_HS_GV_THPT.pdb
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.exe
-C:\Users\Admin\source\repos\QuanLy_HS_GV_THPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
-E:\Thực Tập nhóm\QLTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe.config
-E:\Thực Tập nhóm\QLTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe
-E:\Thực Tập nhóm\QLTHPT\bin\Debug\QuanLy_HS_GV_THPT.pdb
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.csprojAssemblyReference.cache
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangKy.resources
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangNhap.resources
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.ManHinhChinh.resources
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.Properties.Resources.resources
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyHS.resources
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyGV.resources
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateResource.cache
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.exe
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyLop.resources
-E:\Thực Tập nhóm\QLTHPT\obj\Debug\QuanLy_HS_GV_THPT.Thông_Tin_Giảng_Dạy.resources
-D:\Studying\ThucTapNhom\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe.config
-D:\Studying\ThucTapNhom\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe
-D:\Studying\ThucTapNhom\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.pdb
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csprojAssemblyReference.cache
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangKy.resources
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangNhap.resources
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.ManHinhChinh.resources
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Properties.Resources.resources
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyHS.resources
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyGV.resources
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyLop.resources
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Thông_Tin_Giảng_Dạy.resources
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateResource.cache
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.exe
-D:\Studying\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe.config
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.pdb
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csprojAssemblyReference.cache
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangKy.resources
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangNhap.resources
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.ManHinhChinh.resources
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Properties.Resources.resources
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyHS.resources
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyGV.resources
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyLop.resources
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Thông_Tin_Giảng_Dạy.resources
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateResource.cache
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.exe
-C:\Users\LENOVO\Desktop\Thực Tập Nhóm\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe.config
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.pdb
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csprojAssemblyReference.cache
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangKy.resources
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangNhap.resources
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.ManHinhChinh.resources
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Properties.Resources.resources
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyHS.resources
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyGV.resources
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Thông_Tin_Giảng_Dạy.resources
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateResource.cache
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.exe
-D:\QUAN TRỌNG\Thực Tập nhóm\Quản Lý THPT\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
+E:\ThucTapNhom\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe.config
+E:\ThucTapNhom\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe
+E:\ThucTapNhom\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.pdb
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangKy.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangNhap.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\Helper.Helpers.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\Helper.HelpPictureBox.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.ManHinhChinh.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Properties.Resources.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyHS.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyGV.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Thông_Tin_Giảng_Dạy.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateResource.cache
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.exe
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csprojAssemblyReference.cache

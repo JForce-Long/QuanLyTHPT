@@ -17,7 +17,7 @@ namespace QuanLy_HS_GV_THPT
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
-        string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+        string dataSource = @"Data Source=DESKTOP-3PP3KKO;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
         //SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
@@ -42,9 +42,20 @@ namespace QuanLy_HS_GV_THPT
         public QuanLyGV()
         {
             InitializeComponent();
+            this.KeyDown += new KeyEventHandler(Form_KeyDown);
+            dataGridView1.KeyDown += new KeyEventHandler(Form_KeyDown);
         }
 
-         private void QuanLyGV_Load(object sender, EventArgs e)
+        private void Form_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                var helperDialog = new Helper.Helpers();
+                helperDialog.ShowDialog();
+            }
+        }
+
+        private void QuanLyGV_Load(object sender, EventArgs e)
          {
              connection = new SqlConnection(dataSource);
              connection.Open();
@@ -90,6 +101,7 @@ namespace QuanLy_HS_GV_THPT
             command.ExecuteNonQuery();
             loadData();
         }
+<<<<<<< HEAD
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -154,6 +166,37 @@ namespace QuanLy_HS_GV_THPT
             else
             {
                 MessageBox.Show("Không có mã giáo viên cần tìm!");
+=======
+        private void helpBTN_Click(object sender, EventArgs e)
+        {
+            var helperDialog = new Helper.Helpers();
+            helperDialog.ShowDialog();
+        }
+        private void Them_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            string id = txtMaGV.Text;
+            connection.Open();
+
+
+            string sql = "select * from GIAOVIEN where id_Gv = '" + txtMaGV.Text + "'";
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+
+            SqlDataReader dta = cmd.ExecuteReader();
+            if (dta.Read() == true)
+            {
+
+                MessageBox.Show(" Trùng mã! Mời Nhập lại");
+            }
+            else
+            {
+                dta.Close();
+                command = connection.CreateCommand();
+                command.CommandText = "Insert into giao vien values('" + txtMaGV.Text + "', N'" + txtTenGV.Text + "','" + txtGioiTinh.Text + "', N'" + txtDiaChi.Text + "' , '" + txtPhone.Text + "' )";
+                command.ExecuteNonQuery();
+                loadData();
+>>>>>>> 24637f67e61030294104869f10be1e5c50b3e3ba
             }
         }
     }
