@@ -105,10 +105,38 @@ namespace QuanLy_HS_GV_THPT
 
         }
 
+<<<<<<< HEAD
         private void helpBTN_Click(object sender, EventArgs e)
         {
             var helperDialog = new Helper.Helpers();
             helperDialog.ShowDialog();
+=======
+        private void Them_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            string id = txtMaHS.Text;
+            connection.Open();
+
+
+            string sql = "select * from HOCSINH  where id_Hs = '" + txtMaHS.Text + "'";
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+
+            SqlDataReader dta = cmd.ExecuteReader();
+            if (dta.Read() == true)
+            {
+
+                MessageBox.Show(" Trùng Mã ! Mời Nhập lại");
+            }
+            else
+            {
+                dta.Close();
+                command = connection.CreateCommand();
+                command.CommandText = "Insert into HOCSINH  values('" + txtMaHS.Text + "', N'" + txtTenHS.Text + "','" + txtGioiTinh.Text + "', N'" + txtDiaChi.Text + "' , '" + txtPhone.Text + "' )";
+                command.ExecuteNonQuery();
+                loadData();
+            }
+>>>>>>> 0b26bf78321791e3995c5789bd3e1f572c0986ae
         }
     }
 }

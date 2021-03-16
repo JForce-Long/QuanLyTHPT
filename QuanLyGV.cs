@@ -102,10 +102,39 @@ namespace QuanLy_HS_GV_THPT
             loadData();
         }
 
+<<<<<<< HEAD
         private void helpBTN_Click(object sender, EventArgs e)
         {
             var helperDialog = new Helper.Helpers();
             helperDialog.ShowDialog();
+=======
+        private void Them_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            string id = txtMaGV.Text;
+            connection.Open();
+
+
+            string sql = "select * from GIAOVIEN where id_Gv = '" + txtMaGV.Text + "'";
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+
+            SqlDataReader dta = cmd.ExecuteReader();
+            if (dta.Read() == true)
+            {
+
+                MessageBox.Show(" Trùng mã! Mời Nhập lại");
+            }
+            else
+            {
+                dta.Close();
+                command = connection.CreateCommand();
+                command.CommandText = "Insert into giao vien values('" + txtMaGV.Text + "', N'" + txtTenGV.Text + "','" + txtGioiTinh.Text + "', N'" + txtDiaChi.Text + "' , '" + txtPhone.Text + "' )";
+                command.ExecuteNonQuery();
+                loadData();
+            }
+
+>>>>>>> 0b26bf78321791e3995c5789bd3e1f572c0986ae
         }
     }
 }
