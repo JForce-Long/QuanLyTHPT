@@ -55,10 +55,10 @@ namespace QuanLy_HS_GV_THPT
             i = dataGridView1.CurrentRow.Index;
             txtMaHS.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
             txtTenHS.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
-            txtGioiTinh.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
-            txtDiaChi.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
-            txtPhone.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
-
+            txtGioiTinh.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
+            txtDiaChi.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
+            txtPhone.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
+            txtDate.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
         }
 
         private void txtTenHS_TextChanged(object sender, EventArgs e)
@@ -85,12 +85,58 @@ namespace QuanLy_HS_GV_THPT
         {
             txtMaHS.ReadOnly = true;
             command = connection.CreateCommand();
-            command.CommandText = "update HOCSINH set MaHS = N'" + txtMaHS.Text + "', TenHS = '" + txtTenHS.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text +  "' where MaHS = '" + txtMaHS.Text + "'";
+            command.CommandText = "update HOCSINH set MaHS = N'" + txtMaHS.Text + "', TenHS = '" + txtTenHS.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text +  "', Date = '" + txtDate.Text + "' where MaHS = '" + txtMaHS.Text + "'";
             command.ExecuteNonQuery();
             loadData();
         }
 
         private void txtGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimKiem_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(dataSource); 
+            connection.Open();
+            string mahocsinh = txtTimKiem.Text;
+            string sql = "select MaHS from HOCSINH where MaHS = '" + txtTimKiem.Text + "'";
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader data = cmd.ExecuteReader();
+
+            if (data.Read() == true)
+            {
+                data.Close();
+                command = connection.CreateCommand();
+                command.CommandText = "select * from HOCSINH where MaHS='" + txtTimKiem.Text + "'";
+                adapter.SelectCommand = command;
+                table.Clear();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
+            }
+            else
+            {
+                MessageBox.Show("Không có mã học sinh cần tìm!");
+            }
+        }
+
+        private void txtPhone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reset_Click(object sender, EventArgs e)
+        {
+            txtMaHS.Text = "";
+            txtTenHS.Text = "";
+            txtGioiTinh.Text = "";
+            txtDiaChi.Text = "";
+            txtPhone.Text = "";
+            txtDate.Text = "1/1/1900";
+        }
+
+        private void GioiTinh_Click(object sender, EventArgs e)
         {
 
         }

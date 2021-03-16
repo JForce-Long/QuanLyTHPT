@@ -66,7 +66,7 @@ namespace QuanLy_HS_GV_THPT
             txtMaGV.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
             txtTenGV.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
             txtGioiTinh.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
-            dtpDate.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
+            txtDate.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
             txtPhone.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
             txtDiaChi.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
         }
@@ -89,6 +89,72 @@ namespace QuanLy_HS_GV_THPT
             command.CommandText = "update GIAOVIEN set MaGV = N'" + txtMaGV.Text + "', TenGV = '" + txtTenGV.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text + "' where MaGV = '" + txtMaGV.Text + "'";
             command.ExecuteNonQuery();
             loadData();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPhone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDiaChi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DiaChi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reset_Click(object sender, EventArgs e)
+        {
+            txtMaGV.Text = "";
+            txtTenGV.Text = "";
+            txtGioiTinh.Text = "";
+            txtDate.Text = "1/1/1900";
+            txtPhone.Text = "";
+            txtDiaChi.Text = "";
+        }
+
+        private void textTim_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimKiem_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(dataSource);
+            connection.Open();
+            string magiaovien = txtSearch.Text;
+            string sql = "select MaGV from GIAOVIEN where MaGV = '" + txtSearch.Text + "'";
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader data = cmd.ExecuteReader();
+
+            if (data.Read() == true)
+            {
+                data.Close();
+                command = connection.CreateCommand();
+                command.CommandText = "select * from GIAOVIEN where MaGV='" + txtSearch.Text + "'";
+                adapter.SelectCommand = command;
+                table.Clear();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
+            }
+            else
+            {
+                MessageBox.Show("Không có mã giáo viên cần tìm!");
+            }
         }
     }
 }

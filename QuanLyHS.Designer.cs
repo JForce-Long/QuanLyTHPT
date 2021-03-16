@@ -31,6 +31,11 @@ namespace QuanLy_HS_GV_THPT
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyHS));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDate = new System.Windows.Forms.DateTimePicker();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.reset = new System.Windows.Forms.Button();
             this.ReturnHS = new System.Windows.Forms.Button();
             this.txtGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtMaHS = new System.Windows.Forms.TextBox();
@@ -47,16 +52,18 @@ namespace QuanLy_HS_GV_THPT
             this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Orange;
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtDate);
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.txtTimKiem);
+            this.groupBox1.Controls.Add(this.reset);
             this.groupBox1.Controls.Add(this.ReturnHS);
             this.groupBox1.Controls.Add(this.txtGioiTinh);
             this.groupBox1.Controls.Add(this.txtMaHS);
@@ -73,22 +80,73 @@ namespace QuanLy_HS_GV_THPT
             this.groupBox1.Controls.Add(this.label);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(0, 1);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(2, 1);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(224, 364);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(1248, 535);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(14, 304);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 20);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Date";
+            // 
+            // txtDate
+            // 
+            this.txtDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDate.Location = new System.Drawing.Point(127, 304);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(135, 25);
+            this.txtDate.TabIndex = 17;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(296, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(952, 535);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(127, 354);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(135, 25);
+            this.txtTimKiem.TabIndex = 16;
+            // 
+            // reset
+            // 
+            this.reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reset.Image = ((System.Drawing.Image)(resources.GetObject("reset.Image")));
+            this.reset.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.reset.Location = new System.Drawing.Point(180, 480);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(82, 34);
+            this.reset.TabIndex = 15;
+            this.reset.Text = "Reset";
+            this.reset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.reset.UseVisualStyleBackColor = true;
+            this.reset.Click += new System.EventHandler(this.reset_Click);
             // 
             // ReturnHS
             // 
             this.ReturnHS.BackColor = System.Drawing.Color.White;
             this.ReturnHS.Image = ((System.Drawing.Image)(resources.GetObject("ReturnHS.Image")));
-            this.ReturnHS.Location = new System.Drawing.Point(4, 2);
-            this.ReturnHS.Margin = new System.Windows.Forms.Padding(2);
+            this.ReturnHS.Location = new System.Drawing.Point(5, 2);
+            this.ReturnHS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReturnHS.Name = "ReturnHS";
-            this.ReturnHS.Size = new System.Drawing.Size(36, 28);
+            this.ReturnHS.Size = new System.Drawing.Size(48, 34);
             this.ReturnHS.TabIndex = 14;
             this.ReturnHS.UseVisualStyleBackColor = false;
             this.ReturnHS.Click += new System.EventHandler(this.ReturnHS_Click);
@@ -99,55 +157,56 @@ namespace QuanLy_HS_GV_THPT
             this.txtGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.txtGioiTinh.Location = new System.Drawing.Point(82, 123);
-            this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(2);
+            this.txtGioiTinh.Location = new System.Drawing.Point(127, 151);
+            this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGioiTinh.Name = "txtGioiTinh";
-            this.txtGioiTinh.Size = new System.Drawing.Size(102, 24);
+            this.txtGioiTinh.Size = new System.Drawing.Size(135, 28);
             this.txtGioiTinh.TabIndex = 13;
             this.txtGioiTinh.SelectedIndexChanged += new System.EventHandler(this.txtGioiTinh_SelectedIndexChanged);
             // 
             // txtMaHS
             // 
-            this.txtMaHS.Location = new System.Drawing.Point(82, 40);
-            this.txtMaHS.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaHS.Location = new System.Drawing.Point(127, 49);
+            this.txtMaHS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaHS.Name = "txtMaHS";
-            this.txtMaHS.Size = new System.Drawing.Size(102, 22);
+            this.txtMaHS.Size = new System.Drawing.Size(135, 25);
             this.txtMaHS.TabIndex = 12;
             // 
             // txtTenHS
             // 
-            this.txtTenHS.Location = new System.Drawing.Point(82, 80);
-            this.txtTenHS.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenHS.Location = new System.Drawing.Point(127, 98);
+            this.txtTenHS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenHS.Name = "txtTenHS";
-            this.txtTenHS.Size = new System.Drawing.Size(102, 22);
+            this.txtTenHS.Size = new System.Drawing.Size(135, 25);
             this.txtTenHS.TabIndex = 11;
             this.txtTenHS.TextChanged += new System.EventHandler(this.txtTenHS_TextChanged);
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(82, 171);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDiaChi.Location = new System.Drawing.Point(127, 208);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(102, 22);
+            this.txtDiaChi.Size = new System.Drawing.Size(135, 25);
             this.txtDiaChi.TabIndex = 10;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(82, 210);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPhone.Location = new System.Drawing.Point(127, 257);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(102, 22);
+            this.txtPhone.Size = new System.Drawing.Size(135, 25);
             this.txtPhone.TabIndex = 9;
+            this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
             // 
             // Xoa
             // 
             this.Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Xoa.Image = ((System.Drawing.Image)(resources.GetObject("Xoa.Image")));
             this.Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Xoa.Location = new System.Drawing.Point(136, 273);
-            this.Xoa.Margin = new System.Windows.Forms.Padding(2);
+            this.Xoa.Location = new System.Drawing.Point(180, 412);
+            this.Xoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Xoa.Name = "Xoa";
-            this.Xoa.Size = new System.Drawing.Size(55, 28);
+            this.Xoa.Size = new System.Drawing.Size(82, 34);
             this.Xoa.TabIndex = 8;
             this.Xoa.Text = "Xóa";
             this.Xoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,24 +218,25 @@ namespace QuanLy_HS_GV_THPT
             this.TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimKiem.Image = ((System.Drawing.Image)(resources.GetObject("TimKiem.Image")));
             this.TimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.TimKiem.Location = new System.Drawing.Point(136, 331);
-            this.TimKiem.Margin = new System.Windows.Forms.Padding(2);
+            this.TimKiem.Location = new System.Drawing.Point(16, 354);
+            this.TimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TimKiem.Name = "TimKiem";
-            this.TimKiem.Size = new System.Drawing.Size(55, 24);
+            this.TimKiem.Size = new System.Drawing.Size(82, 30);
             this.TimKiem.TabIndex = 7;
             this.TimKiem.Text = "Tìm Kiếm";
             this.TimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.TimKiem.UseVisualStyleBackColor = true;
+            this.TimKiem.Click += new System.EventHandler(this.TimKiem_Click);
             // 
             // Sua
             // 
             this.Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sua.Image = ((System.Drawing.Image)(resources.GetObject("Sua.Image")));
             this.Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Sua.Location = new System.Drawing.Point(19, 331);
-            this.Sua.Margin = new System.Windows.Forms.Padding(2);
+            this.Sua.Location = new System.Drawing.Point(16, 480);
+            this.Sua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sua.Name = "Sua";
-            this.Sua.Size = new System.Drawing.Size(62, 24);
+            this.Sua.Size = new System.Drawing.Size(83, 30);
             this.Sua.TabIndex = 6;
             this.Sua.Text = "Sửa";
             this.Sua.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -188,10 +248,10 @@ namespace QuanLy_HS_GV_THPT
             this.Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Them.Image = ((System.Drawing.Image)(resources.GetObject("Them.Image")));
             this.Them.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Them.Location = new System.Drawing.Point(19, 273);
-            this.Them.Margin = new System.Windows.Forms.Padding(2);
+            this.Them.Location = new System.Drawing.Point(18, 412);
+            this.Them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Them.Name = "Them";
-            this.Them.Size = new System.Drawing.Size(62, 28);
+            this.Them.Size = new System.Drawing.Size(83, 34);
             this.Them.TabIndex = 5;
             this.Them.Text = "Thêm";
             this.Them.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -201,10 +261,9 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(9, 210);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(12, 257);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 17);
+            this.label5.Size = new System.Drawing.Size(61, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Phone";
             // 
@@ -212,10 +271,9 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 171);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(12, 208);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 17);
+            this.label4.Size = new System.Drawing.Size(71, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Địa Chỉ";
             // 
@@ -223,21 +281,20 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.GioiTinh.AutoSize = true;
             this.GioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GioiTinh.Location = new System.Drawing.Point(2, 123);
-            this.GioiTinh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.GioiTinh.Location = new System.Drawing.Point(12, 154);
             this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.Size = new System.Drawing.Size(74, 17);
+            this.GioiTinh.Size = new System.Drawing.Size(85, 20);
             this.GioiTinh.TabIndex = 2;
             this.GioiTinh.Text = "Giới Tính";
+            this.GioiTinh.Click += new System.EventHandler(this.GioiTinh_Click);
             // 
             // label
             // 
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(4, 80);
-            this.label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label.Location = new System.Drawing.Point(13, 98);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(62, 17);
+            this.label.Size = new System.Drawing.Size(72, 20);
             this.label.TabIndex = 1;
             this.label.Text = "Tên HS";
             // 
@@ -245,50 +302,24 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 40);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(13, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 17);
+            this.label1.Size = new System.Drawing.Size(66, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã HS";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(229, 1);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(370, 364);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(374, 364);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
             // QuanLyHS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(1249, 538);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "QuanLyHS";
             this.Text = "QuanLyHS";
             this.Load += new System.EventHandler(this.QuanLyHS_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -313,7 +344,10 @@ namespace QuanLy_HS_GV_THPT
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ComboBox txtGioiTinh;
         private System.Windows.Forms.Button ReturnHS;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button reset;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker txtDate;
     }
 }
