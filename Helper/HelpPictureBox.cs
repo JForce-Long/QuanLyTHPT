@@ -16,19 +16,20 @@ namespace Helper
         int currentIndex = 0;
         int[] maxIndex = new int[4] { 1, 2, 1, 1 };
         HELPERSTATE currentState = HELPERSTATE.ADDHELPER;
+        CATSTATE currentObjectToRef = CATSTATE.STUDENT;
         string[,] helpStringStudent = new string[4, 3] 
         { 
-            { "B1: Điền thông tin nhân viên cần thêm vào các bảng", "B2: Nhấp chuột trái vào nút Thêm để thêm nhân viên vào cơ sở dữ liệu","" }, 
-            { "B1: Nhấp chuột trái 2 lần vào dòng nhân viên cần sửa", "B2: Thay đổi thông tin ở trên các bảng","B3: Nhấp chuột trái vào nút Sửa để cập nhập lại thông tin nhân viên" },
-            { "B1: Nhấp chuột trái 2 lần vào dòng nhân viên cần xoá", "B2: Nhấp chuột trái vào nút Xoá để xoá nhân viên khỏi cơ sở dữ liệu","" },
-            { "B1: Điền thông tin nhân viên cần tìm kiếm vào bảng", "B2: Nhấp chuột trái vào nút tìm kiếm để in ra thông tin của các nhân viên tương đồng với thông tin đã nhập","" }
+            { "B1: Điền thông tin học sinh cần thêm vào các bảng", "B2: Nhấp chuột trái vào nút Thêm để thêm học sinh vào cơ sở dữ liệu","" }, 
+            { "B1: Nhấp chuột trái 2 lần vào dòng học sinh cần sửa trong bảng hoặc gõ mã học sinh vào trong ô", "B2: Thay đổi thông tin ở trên các bảng","B3: Nhấp chuột trái vào nút Sửa để cập nhập lại thông tin học sinh" },
+            { "B1: Nhấp chuột trái 2 lần vào dòng học sinh cần xoá", "B2: Nhấp chuột trái vào nút Xoá để xoá học sinh khỏi cơ sở dữ liệu","" },
+            { "B1: Điền thông tin học sinh cần tìm kiếm vào bảng", "B2: Nhấp chuột trái vào nút tìm kiếm để in ra thông tin của các học sinh tương đồng với thông tin đã nhập","" }
         };
         string[,] helpStringTeacher = new string[4, 3]
         {
-            { "B1: Điền thông tin nhân viên cần thêm vào các bảng", "B2: Nhấp chuột trái vào nút Thêm để thêm nhân viên vào cơ sở dữ liệu","" },
-            { "B1: Nhấp chuột trái 2 lần vào dòng nhân viên cần sửa", "B2: Thay đổi thông tin ở trên các bảng","B3: Nhấp chuột trái vào nút Sửa để cập nhập lại thông tin nhân viên" },
-            { "B1: Nhấp chuột trái 2 lần vào dòng nhân viên cần xoá", "B2: Nhấp chuột trái vào nút Xoá để xoá nhân viên khỏi cơ sở dữ liệu","" },
-            { "B1: Điền thông tin nhân viên cần tìm kiếm vào bảng", "B2: Nhấp chuột trái vào nút tìm kiếm để in ra thông tin của các nhân viên tương đồng với thông tin đã nhập","" }
+            { "B1: Điền thông tin giáo viên cần thêm vào các bảng", "B2: Nhấp chuột trái vào nút Thêm để thêm giáo viên vào cơ sở dữ liệu","" },
+            { "B1: Nhấp chuột trái 2 lần vào dòng giáo viên cần sửa trong bảng hoặc gõ mã học sinh vào trong ô", "B2: Thay đổi thông tin ở trên các bảng","B3: Nhấp chuột trái vào nút Sửa để cập nhập lại thông tin giáo viên" },
+            { "B1: Nhấp chuột trái 2 lần vào dòng giáo viên cần xoá", "B2: Nhấp chuột trái vào nút Xoá để xoá giáo viên khỏi cơ sở dữ liệu","" },
+            { "B1: Điền thông tin giáo viên cần tìm kiếm vào bảng", "B2: Nhấp chuột trái vào nút tìm kiếm để in ra thông tin của các giáo viên tương đồng với thông tin đã nhập","" }
         };
         public HelpPictureBox()
         {
@@ -50,12 +51,23 @@ namespace Helper
 
         private void setImage(string filename)
         {
-            helpLabel.Text = helpStringStudent[(int)currentState,currentIndex];
-            checkLabeOverflow();
-            helperPic.Image = Image.FromFile(Application.StartupPath + filename);
+            switch(currentObjectToRef)
+            {
+                case CATSTATE.TEACHER:
+                    helpLabel.Text = helpStringTeacher[(int)currentState, currentIndex];
+                    checkLabeOverflow();
+                    helperPic.Image = Image.FromFile(Application.StartupPath + "\\Image\\GV" + filename);
+                    break;
+                case CATSTATE.STUDENT:
+                    helpLabel.Text = helpStringStudent[(int)currentState, currentIndex];
+                    checkLabeOverflow();
+                    helperPic.Image = Image.FromFile(Application.StartupPath + "\\Image\\HS" + filename);
+                    break;
+            }   
+
             helperPic.SizeMode = PictureBoxSizeMode.StretchImage;
         }
-        public void updateInformation(HELPERSTATE state, int index = 0)
+        public void updateInformation(HELPERSTATE state,CATSTATE catstate, int index = 0)
         {
             //Pass
             if (index > maxIndex[(int)currentState] || index < 0) return;
@@ -63,20 +75,21 @@ namespace Helper
             index = Define.Clamp(ref index, 0, maxIndex[(int)currentState]);
             currentIndex = index;
             currentState = state;
+            currentObjectToRef = catstate;
             FillProgressBar(index);
             switch (state)
             {
                 case HELPERSTATE.ADDHELPER:
-                    setImage("\\Image\\add" + index + ".png");
+                    setImage("\\add" + index + ".png");
                     return;
                 case HELPERSTATE.DELETEHELPER:
-                    setImage("\\Image\\delete" + index + ".png");
+                    setImage("\\del" + index + ".png");
                     return;
                 case HELPERSTATE.EDITHELPER:
-                    setImage("\\Image\\edit" + index + ".png");
+                    setImage("\\edit" + index + ".png");
                     return;
                 case HELPERSTATE.SEARCHHELPER:
-                    setImage("\\Image\\search" + index + ".png");
+                    setImage("\\search" + index + ".png");
                     return;
             }
         }
@@ -95,12 +108,12 @@ namespace Helper
 
         private void previousBTN_Click(object sender, EventArgs e)
         {
-            updateInformation(currentState, currentIndex - 1);
+            updateInformation(currentState,currentObjectToRef ,currentIndex - 1);
         }
 
         private void nextBTN_Click(object sender, EventArgs e)
         {
-            updateInformation(currentState, currentIndex + 1);
+            updateInformation(currentState, currentObjectToRef, currentIndex + 1);
         }
 
         void checkLabeOverflow()

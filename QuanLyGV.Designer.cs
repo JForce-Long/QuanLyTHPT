@@ -49,6 +49,7 @@ namespace QuanLy_HS_GV_THPT
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.helpBTN = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +57,7 @@ namespace QuanLy_HS_GV_THPT
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.groupBox2.Controls.Add(this.helpBTN);
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Controls.Add(this.ReturnGV);
             this.groupBox2.Controls.Add(this.TimKiem);
@@ -284,6 +286,18 @@ namespace QuanLy_HS_GV_THPT
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã GV";
             // 
+            // helpBTN
+            // 
+            this.helpBTN.BackColor = System.Drawing.Color.White;
+            this.helpBTN.Image = global::QuanLy_HS_GV_THPT.Properties.Resources.help;
+            this.helpBTN.Location = new System.Drawing.Point(169, 0);
+            this.helpBTN.Margin = new System.Windows.Forms.Padding(2);
+            this.helpBTN.Name = "helpBTN";
+            this.helpBTN.Size = new System.Drawing.Size(33, 30);
+            this.helpBTN.TabIndex = 18;
+            this.helpBTN.UseVisualStyleBackColor = false;
+            this.helpBTN.Click += new System.EventHandler(this.helpBTN_Click);
+            // 
             // QuanLyGV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,6 +335,7 @@ namespace QuanLy_HS_GV_THPT
         private System.Windows.Forms.ComboBox txtGioiTinh;
         private System.Windows.Forms.Button ReturnGV;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button helpBTN;
     }
 }
 

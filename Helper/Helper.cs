@@ -17,7 +17,7 @@ namespace Helper
         {
             InitializeComponent();
             btnClick(addStHelperBTN);
-            helpBox.updateInformation(HELPERSTATE.ADDHELPER);
+            helpBox.updateInformation(HELPERSTATE.ADDHELPER,CATSTATE.STUDENT);
         }
         void btnClick(Button btn)
         {
@@ -37,42 +37,50 @@ namespace Helper
         private void addStHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
+            helpBox.updateInformation(HELPERSTATE.ADDHELPER,CATSTATE.STUDENT);
         }
 
         private void editStHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
+            helpBox.updateInformation(HELPERSTATE.EDITHELPER, CATSTATE.STUDENT);
         }
 
         private void delStHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
+            helpBox.updateInformation(HELPERSTATE.DELETEHELPER, CATSTATE.STUDENT);
         }
 
         private void searchStHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
+            helpBox.updateInformation(HELPERSTATE.SEARCHHELPER, CATSTATE.STUDENT);
         }
         #endregion
         #region GiaoVien
         private void addTeacherHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
+            helpBox.updateInformation(HELPERSTATE.ADDHELPER, CATSTATE.TEACHER);
         }
 
         private void editTeacherHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
+            helpBox.updateInformation(HELPERSTATE.EDITHELPER, CATSTATE.TEACHER);
         }
 
         private void delTeacherHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
+            helpBox.updateInformation(HELPERSTATE.DELETEHELPER, CATSTATE.TEACHER);
         }
 
         private void searchTeacherHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
+            helpBox.updateInformation(HELPERSTATE.SEARCHHELPER, CATSTATE.TEACHER);
         }
         #endregion
     }

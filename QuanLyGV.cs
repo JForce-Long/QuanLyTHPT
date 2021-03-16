@@ -17,7 +17,7 @@ namespace QuanLy_HS_GV_THPT
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
-        string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+        string dataSource = @"Data Source=DESKTOP-3PP3KKO;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
         //SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
@@ -42,9 +42,20 @@ namespace QuanLy_HS_GV_THPT
         public QuanLyGV()
         {
             InitializeComponent();
+            this.KeyDown += new KeyEventHandler(Form_KeyDown);
+            dataGridView1.KeyDown += new KeyEventHandler(Form_KeyDown);
         }
 
-         private void QuanLyGV_Load(object sender, EventArgs e)
+        private void Form_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                var helperDialog = new Helper.Helpers();
+                helperDialog.ShowDialog();
+            }
+        }
+
+        private void QuanLyGV_Load(object sender, EventArgs e)
          {
              connection = new SqlConnection(dataSource);
              connection.Open();
@@ -89,6 +100,12 @@ namespace QuanLy_HS_GV_THPT
             command.CommandText = "update GIAOVIEN set MaGV = N'" + txtMaGV.Text + "', TenGV = '" + txtTenGV.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text + "' where MaGV = '" + txtMaGV.Text + "'";
             command.ExecuteNonQuery();
             loadData();
+        }
+
+        private void helpBTN_Click(object sender, EventArgs e)
+        {
+            var helperDialog = new Helper.Helpers();
+            helperDialog.ShowDialog();
         }
     }
 }

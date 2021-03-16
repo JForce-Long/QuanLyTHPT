@@ -49,6 +49,7 @@ namespace QuanLy_HS_GV_THPT
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.helpBTN = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -57,6 +58,7 @@ namespace QuanLy_HS_GV_THPT
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Orange;
+            this.groupBox1.Controls.Add(this.helpBTN);
             this.groupBox1.Controls.Add(this.ReturnHS);
             this.groupBox1.Controls.Add(this.txtGioiTinh);
             this.groupBox1.Controls.Add(this.txtMaHS);
@@ -275,6 +277,18 @@ namespace QuanLy_HS_GV_THPT
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
+            // helpBTN
+            // 
+            this.helpBTN.BackColor = System.Drawing.Color.White;
+            this.helpBTN.Image = global::QuanLy_HS_GV_THPT.Properties.Resources.help;
+            this.helpBTN.Location = new System.Drawing.Point(187, 6);
+            this.helpBTN.Margin = new System.Windows.Forms.Padding(2);
+            this.helpBTN.Name = "helpBTN";
+            this.helpBTN.Size = new System.Drawing.Size(33, 30);
+            this.helpBTN.TabIndex = 19;
+            this.helpBTN.UseVisualStyleBackColor = false;
+            this.helpBTN.Click += new System.EventHandler(this.helpBTN_Click);
+            // 
             // QuanLyHS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,5 +329,6 @@ namespace QuanLy_HS_GV_THPT
         private System.Windows.Forms.Button ReturnHS;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button helpBTN;
     }
 }

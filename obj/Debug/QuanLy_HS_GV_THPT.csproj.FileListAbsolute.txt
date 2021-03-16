@@ -14,3 +14,4 @@ E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateResource.ca
 E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
 E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.exe
 E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csprojAssemblyReference.cache

@@ -16,7 +16,7 @@ namespace QuanLy_HS_GV_THPT
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
-        string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+        string dataSource = @"Data Source=DESKTOP-3PP3KKO;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
        // SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
@@ -39,8 +39,18 @@ namespace QuanLy_HS_GV_THPT
         public QuanLyHS()
         {
             InitializeComponent();
+            this.KeyDown += new KeyEventHandler(Form_KeyDown);
+            dataGridView1.KeyDown += new KeyEventHandler(Form_KeyDown);
         }
 
+        private void Form_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                var helperDialog = new Helper.Helpers();
+                helperDialog.ShowDialog();
+            }
+        }
         private void QuanLyHS_Load(object sender, EventArgs e)
         {
             connection = new SqlConnection(dataSource);
@@ -93,6 +103,12 @@ namespace QuanLy_HS_GV_THPT
         private void txtGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void helpBTN_Click(object sender, EventArgs e)
+        {
+            var helperDialog = new Helper.Helpers();
+            helperDialog.ShowDialog();
         }
     }
 }
