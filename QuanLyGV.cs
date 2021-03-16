@@ -90,5 +90,33 @@ namespace QuanLy_HS_GV_THPT
             command.ExecuteNonQuery();
             loadData();
         }
+
+        private void Them_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            string id = txtMaGV.Text;
+            connection.Open();
+
+
+            string sql = "select * from GIAOVIEN where id_Gv = '" + txtMaGV.Text + "'";
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+
+            SqlDataReader dta = cmd.ExecuteReader();
+            if (dta.Read() == true)
+            {
+
+                MessageBox.Show(" Trùng mã! Mời Nhập lại");
+            }
+            else
+            {
+                dta.Close();
+                command = connection.CreateCommand();
+                command.CommandText = "Insert into giao vien values('" + txtMaGV.Text + "', N'" + txtTenGV.Text + "','" + txtGioiTinh.Text + "', N'" + txtDiaChi.Text + "' , '" + txtPhone.Text + "' )";
+                command.ExecuteNonQuery();
+                loadData();
+            }
+
+        }
     }
 }
