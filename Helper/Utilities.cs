@@ -52,7 +52,7 @@ namespace Helper
     {
         //Datasourse (khac nhau)
         //DN: ADMIN\SQLEXPRESS
-        public const string dataSource = @"Data Source=DESKTOP-3PP3KKO;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+        public const string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
 
         public static int Clamp(ref int value, int min, int max)
         {

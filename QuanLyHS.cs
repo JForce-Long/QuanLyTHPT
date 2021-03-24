@@ -16,7 +16,7 @@ namespace QuanLy_HS_GV_THPT
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
-        string dataSource = @"Data Source=DESKTOP-3PP3KKO;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+        string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
        // SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
@@ -43,6 +43,7 @@ namespace QuanLy_HS_GV_THPT
             dataGridView1.KeyDown += new KeyEventHandler(Form_KeyDown);
         }
 
+
         private void Form_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode.ToString() == "F1")
@@ -58,23 +59,9 @@ namespace QuanLy_HS_GV_THPT
             loadData();
         }
 
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
 
-            int i;
-            i = dataGridView1.CurrentRow.Index;
-            txtMaHS.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
-            txtTenHS.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
-            txtGioiTinh.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
-            txtDiaChi.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
-            txtPhone.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
-            txtDate.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
-        }
+       
 
-        private void txtTenHS_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void ReturnHS_Click(object sender, EventArgs e)
         {
@@ -95,15 +82,13 @@ namespace QuanLy_HS_GV_THPT
         {
             txtMaHS.ReadOnly = true;
             command = connection.CreateCommand();
-            command.CommandText = "update HOCSINH set MaHS = N'" + txtMaHS.Text + "', TenHS = '" + txtTenHS.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text +  "', Date = '" + txtDate.Text + "' where MaHS = '" + txtMaHS.Text + "'";
+            command.CommandText = "update HOCSINH set MaHS = N'" + txtMaHS.Text + "', TenHS = '" + txtTenHS.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text +  "', Date = '" + txtDate.Text + "', MaLop= '"+txtMaLop+"' where MaHS = '" + txtMaHS.Text + "'";
             command.ExecuteNonQuery();
             loadData();
         }
 
-        private void txtGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
-        {
+       
 
-        }
         private void TimKiem_Click(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(dataSource); 
@@ -130,10 +115,8 @@ namespace QuanLy_HS_GV_THPT
             }
         }
 
-        private void txtPhone_TextChanged(object sender, EventArgs e)
-        {
+       
 
-        }
 
         private void reset_Click(object sender, EventArgs e)
         {
@@ -143,25 +126,26 @@ namespace QuanLy_HS_GV_THPT
             txtDiaChi.Text = "";
             txtPhone.Text = "";
             txtDate.Text = "1/1/1900";
+            txtMaLop.Text = "";
         }
 
-        private void GioiTinh_Click(object sender, EventArgs e)
-        {
-
-        }
+     
         private void helpBTN_Click(object sender, EventArgs e)
         {
             var helperDialog = new Helper.Helpers();
             helperDialog.ShowDialog();
         }
-        private void Them_Click(object sender, EventArgs e)
+       
+
+
+        private void Them_Click_1(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
             string id = txtMaHS.Text;
             connection.Open();
 
 
-            string sql = "select * from HOCSINH  where id_Hs = '" + txtMaHS.Text + "'";
+            string sql = "select * from HOCSINH  where MaHS = '" + txtMaHS.Text + "'";
 
             SqlCommand cmd = new SqlCommand(sql, connection);
 
@@ -175,10 +159,27 @@ namespace QuanLy_HS_GV_THPT
             {
                 dta.Close();
                 command = connection.CreateCommand();
-                command.CommandText = "Insert into HOCSINH  values('" + txtMaHS.Text + "', N'" + txtTenHS.Text + "','" + txtGioiTinh.Text + "', N'" + txtDiaChi.Text + "' , '" + txtPhone.Text + "' )";
+                command.CommandText = "Insert into HOCSINH  values('" + txtMaHS.Text + "', N'" + txtTenHS.Text + "','" + txtGioiTinh.Text + "', N'" + txtDiaChi.Text + "' , '" + txtPhone.Text + "', '" + txtDate.Text + "', '" + txtMaLop + "' )";
                 command.ExecuteNonQuery();
                 loadData();
             }
+        }
+
+
+       
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            int i;
+            i = dataGridView1.CurrentRow.Index;
+            txtMaHS.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
+            txtTenHS.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
+            txtGioiTinh.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
+            txtDiaChi.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
+            txtPhone.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
+            txtDate.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
+            txtMaLop.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
         }
     }
 }

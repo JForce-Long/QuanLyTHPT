@@ -17,7 +17,7 @@ namespace QuanLy_HS_GV_THPT
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
-        string dataSource = @"Data Source=DESKTOP-3PP3KKO;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+        string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
         //SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
@@ -101,30 +101,6 @@ namespace QuanLy_HS_GV_THPT
             command.ExecuteNonQuery();
             loadData();
         }
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPhone_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtDiaChi_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DiaChi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void reset_Click(object sender, EventArgs e)
         {
@@ -136,10 +112,8 @@ namespace QuanLy_HS_GV_THPT
             txtDiaChi.Text = "";
         }
 
-        private void textTim_TextChanged(object sender, EventArgs e)
-        {
+       
 
-        }
 
         private void TimKiem_Click(object sender, EventArgs e)
         {
@@ -171,14 +145,17 @@ namespace QuanLy_HS_GV_THPT
             var helperDialog = new Helper.Helpers();
             helperDialog.ShowDialog();
         }
-        private void Them_Click(object sender, EventArgs e)
+
+
+       
+        private void Them_Click_1(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
             string id = txtMaGV.Text;
             connection.Open();
 
 
-            string sql = "select * from GIAOVIEN where id_Gv = '" + txtMaGV.Text + "'";
+            string sql = "select * from GIAOVIEN where MaGV = '" + txtMaGV.Text + "'";
 
             SqlCommand cmd = new SqlCommand(sql, connection);
 
@@ -192,7 +169,7 @@ namespace QuanLy_HS_GV_THPT
             {
                 dta.Close();
                 command = connection.CreateCommand();
-                command.CommandText = "Insert into giao vien values('" + txtMaGV.Text + "', N'" + txtTenGV.Text + "','" + txtGioiTinh.Text + "', N'" + txtDiaChi.Text + "' , '" + txtPhone.Text + "' )";
+                command.CommandText = "Insert into GIAOVIEN values('" + txtMaGV.Text + "', N'" + txtTenGV.Text + "','" + txtGioiTinh.Text + "', '"+ txtDate.Text+"', '" + txtPhone.Text + "', N'" + txtDiaChi.Text + "'  )";
                 command.ExecuteNonQuery();
                 loadData();
             }
