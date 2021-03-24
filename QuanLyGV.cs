@@ -117,6 +117,7 @@ namespace QuanLy_HS_GV_THPT
 
         private void TimKiem_Click(object sender, EventArgs e)
         {
+            // tim kiem
             SqlConnection connection = new SqlConnection(dataSource);
             connection.Open();
             string magiaovien = txtSearch.Text;
