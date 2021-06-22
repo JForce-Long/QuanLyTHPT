@@ -93,10 +93,10 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.reset.Image = ((System.Drawing.Image)(resources.GetObject("reset.Image")));
             this.reset.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.reset.Location = new System.Drawing.Point(155, 414);
+            this.reset.Location = new System.Drawing.Point(182, 414);
             this.reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.reset.Name = "reset";
-            this.reset.Size = new System.Drawing.Size(87, 31);
+            this.reset.Size = new System.Drawing.Size(102, 31);
             this.reset.TabIndex = 19;
             this.reset.Text = "Reset";
             this.reset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -105,12 +105,11 @@ namespace QuanLy_HS_GV_THPT
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(109, 322);
+            this.txtSearch.Location = new System.Drawing.Point(140, 324);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(144, 25);
             this.txtSearch.TabIndex = 18;
-  
             // 
             // helpBTN
             // 
@@ -127,12 +126,12 @@ namespace QuanLy_HS_GV_THPT
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(275, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(319, 0);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(840, 457);
+            this.dataGridView1.Size = new System.Drawing.Size(796, 457);
             this.dataGridView1.TabIndex = 17;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -156,7 +155,7 @@ namespace QuanLy_HS_GV_THPT
             this.Search.Location = new System.Drawing.Point(11, 318);
             this.Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(79, 31);
+            this.Search.Size = new System.Drawing.Size(107, 31);
             this.Search.TabIndex = 15;
             this.Search.Text = "Tìm Kiếm";
             this.Search.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -168,10 +167,10 @@ namespace QuanLy_HS_GV_THPT
             this.Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Xoa.Image = ((System.Drawing.Image)(resources.GetObject("Xoa.Image")));
             this.Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Xoa.Location = new System.Drawing.Point(155, 363);
+            this.Xoa.Location = new System.Drawing.Point(182, 363);
             this.Xoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Xoa.Name = "Xoa";
-            this.Xoa.Size = new System.Drawing.Size(87, 30);
+            this.Xoa.Size = new System.Drawing.Size(102, 30);
             this.Xoa.TabIndex = 14;
             this.Xoa.Text = "Xóa";
             this.Xoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -186,7 +185,7 @@ namespace QuanLy_HS_GV_THPT
             this.Sua.Location = new System.Drawing.Point(11, 414);
             this.Sua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sua.Name = "Sua";
-            this.Sua.Size = new System.Drawing.Size(79, 31);
+            this.Sua.Size = new System.Drawing.Size(107, 31);
             this.Sua.TabIndex = 13;
             this.Sua.Text = "Sửa";
             this.Sua.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -201,7 +200,7 @@ namespace QuanLy_HS_GV_THPT
             this.Them.Location = new System.Drawing.Point(11, 363);
             this.Them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Them.Name = "Them";
-            this.Them.Size = new System.Drawing.Size(77, 30);
+            this.Them.Size = new System.Drawing.Size(107, 30);
             this.Them.TabIndex = 12;
             this.Them.Text = "Thêm";
             this.Them.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -211,7 +210,7 @@ namespace QuanLy_HS_GV_THPT
             // txtDate
             // 
             this.txtDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDate.Location = new System.Drawing.Point(109, 182);
+            this.txtDate.Location = new System.Drawing.Point(139, 182);
             this.txtDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(145, 25);
@@ -223,16 +222,16 @@ namespace QuanLy_HS_GV_THPT
             this.txtGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.txtGioiTinh.Location = new System.Drawing.Point(109, 138);
+            this.txtGioiTinh.Location = new System.Drawing.Point(139, 138);
             this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Size = new System.Drawing.Size(145, 28);
             this.txtGioiTinh.TabIndex = 10;
-           
+            this.txtGioiTinh.SelectedIndexChanged += new System.EventHandler(this.txtGioiTinh_SelectedIndexChanged);
             // 
             // txtMaGV
             // 
-            this.txtMaGV.Location = new System.Drawing.Point(109, 48);
+            this.txtMaGV.Location = new System.Drawing.Point(139, 48);
             this.txtMaGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaGV.Name = "txtMaGV";
             this.txtMaGV.Size = new System.Drawing.Size(145, 25);
@@ -240,7 +239,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             // txtTenGV
             // 
-            this.txtTenGV.Location = new System.Drawing.Point(109, 94);
+            this.txtTenGV.Location = new System.Drawing.Point(139, 94);
             this.txtTenGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenGV.Name = "txtTenGV";
             this.txtTenGV.Size = new System.Drawing.Size(145, 25);
@@ -248,21 +247,19 @@ namespace QuanLy_HS_GV_THPT
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(109, 229);
+            this.txtPhone.Location = new System.Drawing.Point(139, 229);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(145, 25);
             this.txtPhone.TabIndex = 7;
-           
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(109, 272);
+            this.txtDiaChi.Location = new System.Drawing.Point(139, 272);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(145, 25);
             this.txtDiaChi.TabIndex = 6;
-     
             // 
             // DiaChi
             // 
@@ -273,7 +270,6 @@ namespace QuanLy_HS_GV_THPT
             this.DiaChi.Size = new System.Drawing.Size(68, 20);
             this.DiaChi.TabIndex = 5;
             this.DiaChi.Text = "Địa chỉ";
-            
             // 
             // Phone
             // 
@@ -304,7 +300,6 @@ namespace QuanLy_HS_GV_THPT
             this.label3.Size = new System.Drawing.Size(85, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Giới Tính";
-     
             // 
             // label2
             // 

@@ -80,9 +80,8 @@ namespace QuanLy_HS_GV_THPT
 
         private void Sua_Click(object sender, EventArgs e)
         {
-            txtMaHS.ReadOnly = true;
             command = connection.CreateCommand();
-            command.CommandText = "update HOCSINH set MaHS = N'" + txtMaHS.Text + "', TenHS = '" + txtTenHS.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text +  "', Date = '" + txtDate.Text + "', MaLop= '"+txtMaLop+"' where MaHS = '" + txtMaHS.Text + "'";
+            command.CommandText = "update HOCSINH set MaHS = N'" + txtMaHS.Text + "', TenHS = '" + txtTenHS.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text +  "', Date = '" + txtDate.Text + "', MaLop= '"+txtMaLop.Text+"' where MaHS = '" + txtMaHS.Text + "'";
             command.ExecuteNonQuery();
             loadData();
         }

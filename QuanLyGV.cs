@@ -175,5 +175,10 @@ namespace QuanLy_HS_GV_THPT
                 loadData();
             }
         }
+
+        private void txtGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
