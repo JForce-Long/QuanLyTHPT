@@ -206,7 +206,7 @@ namespace QuanLy_HS_GV_THPT
             this.txtGioiTinh.FormattingEnabled = true;
             this.txtGioiTinh.Items.AddRange(new object[] {
             "Nam",
-            "Nữ"});
+            "Nu"});
             this.txtGioiTinh.Location = new System.Drawing.Point(151, 137);
             this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGioiTinh.Name = "txtGioiTinh";
@@ -262,7 +262,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             // TimKiem
             // 
-            this.TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimKiem.Image = ((System.Drawing.Image)(resources.GetObject("TimKiem.Image")));
             this.TimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.TimKiem.Location = new System.Drawing.Point(16, 354);

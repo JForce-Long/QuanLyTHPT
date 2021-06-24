@@ -23,7 +23,7 @@ namespace QuanLy_HS_GV_THPT
         void loadData()
         {
             command = connection.CreateCommand();
-            command.CommandText = "select * from HOCSINH,LOP where HOCSINH.MaLop = LOP.MaLop";
+            command.CommandText = "select MaHS, TenHS, GioiTinh, Date, LOP.MaLop, TenLop, MaGV from HOCSINH,LOP where HOCSINH.MaLop = LOP.MaLop";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
@@ -52,17 +52,9 @@ namespace QuanLy_HS_GV_THPT
 
         private void InDS_Click(object sender, EventArgs e)
         {
-
+           
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

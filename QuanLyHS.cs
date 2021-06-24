@@ -127,6 +127,8 @@ namespace QuanLy_HS_GV_THPT
             txtPhone.Text = "";
             txtDate.Text = "1/1/1900";
             txtMaLop.Text = "";
+            txtTimKiem.Text = "";
+            loadData();
         }
 
      
@@ -159,12 +161,11 @@ namespace QuanLy_HS_GV_THPT
             {
                 dta.Close();
                 command = connection.CreateCommand();
-                command.CommandText = "Insert into HOCSINH  values('" + txtMaHS.Text + "', N'" + txtTenHS.Text + "','" + txtGioiTinh.Text + "', N'" + txtDiaChi.Text + "' , '" + txtPhone.Text + "', '" + txtDate.Text + "', '" + txtMaLop + "' )";
+                command.CommandText = "Insert into HOCSINH  values('" + txtMaHS.Text + "', N'" + txtTenHS.Text + "','" + txtGioiTinh.Text + "', N'" + txtDiaChi.Text + "' , '" + txtPhone.Text + "', '" + txtDate.Text + "', '" + txtMaLop.Text + "' )";
                 command.ExecuteNonQuery();
                 loadData();
             }
         }
-
 
        
 
