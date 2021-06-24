@@ -1,0 +1,17 @@
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csprojAssemblyReference.cache
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangKy.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.DangNhap.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\Helper.Helpers.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\Helper.HelpPictureBox.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.ManHinhChinh.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Properties.Resources.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyGV.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.Thông_Tin_Giảng_Dạy.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.GenerateResource.cache
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.exe
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.pdb
+E:\ThucTapNhom\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe.config
+E:\ThucTapNhom\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.exe
+E:\ThucTapNhom\QuanLyTHPT\bin\Debug\QuanLy_HS_GV_THPT.pdb
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.QuanLyHS.resources
+E:\ThucTapNhom\QuanLyTHPT\obj\Debug\QuanLy_HS_GV_THPT.csproj.CoreCompileInputs.cache
