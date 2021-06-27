@@ -52,7 +52,7 @@ namespace QuanLy_HS_GV_THPT
 
         private void InDS_Click(object sender, EventArgs e)
         {
-           
+            MessageBox.Show("In danh sách thành công!");
         }
 
        

@@ -57,10 +57,12 @@ namespace QuanLy_HS_GV_THPT
             connection = new SqlConnection(dataSource);
             connection.Open();
             loadData();
+            loadDataCombobox();
+
         }
 
 
-       
+
 
 
         private void ReturnHS_Click(object sender, EventArgs e)
@@ -81,7 +83,7 @@ namespace QuanLy_HS_GV_THPT
         private void Sua_Click(object sender, EventArgs e)
         {
             command = connection.CreateCommand();
-            command.CommandText = "update HOCSINH set MaHS = N'" + txtMaHS.Text + "', TenHS = '" + txtTenHS.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text +  "', Date = '" + txtDate.Text + "', MaLop= '"+txtMaLop.Text+"' where MaHS = '" + txtMaHS.Text + "'";
+            command.CommandText = "update HOCSINH set MaHS = N'" + txtMaHS.Text + "', TenHS = '" + txtTenHS.Text + "', GioiTinh = N'" + txtGioiTinh.Text + "' , DiaChi = '" + txtDiaChi.Text + "', SDT = '" + txtPhone.Text +  "', Date = '" + txtDate.Text + "', MaLop= '"+cbbML.Text+"' where MaHS = '" + txtMaHS.Text + "'";
             command.ExecuteNonQuery();
             loadData();
         }
@@ -90,10 +92,9 @@ namespace QuanLy_HS_GV_THPT
 
         private void TimKiem_Click(object sender, EventArgs e)
         {
-            // tim kiem hoc sinh
+            // tim kiem mã hoc sinh
             SqlConnection connection = new SqlConnection(dataSource); 
             connection.Open();
-            string mahocsinh = txtTimKiem.Text;
             string sql = "select MaHS from HOCSINH where MaHS = '" + txtTimKiem.Text + "'";
 
             SqlCommand cmd = new SqlCommand(sql, connection);
@@ -109,13 +110,32 @@ namespace QuanLy_HS_GV_THPT
                 adapter.Fill(table);
                 dataGridView1.DataSource = table;
             }
-            else
+           
+
+            // tim kiem tên hoc sinh
+            SqlConnection connection1 = new SqlConnection(dataSource);
+            connection1.Open();
+            string sql1 = "select TenHS from HOCSINH where TenHS = '" + txtTimKiem.Text + "'";
+
+            SqlCommand cmd1 = new SqlCommand(sql1, connection1);
+            SqlDataReader data1 = cmd1.ExecuteReader();
+
+            if (data1.Read() == true)
             {
-                MessageBox.Show("Không có mã học sinh cần tìm!");
+                data1.Close();
+                command = connection1.CreateCommand();
+                command.CommandText = "select * from HOCSINH where TenHS='" + txtTimKiem.Text + "'";
+                adapter.SelectCommand = command;
+                table.Clear();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
             }
+            else { MessageBox.Show("Không có nhân viên cần tìm!"); }
+
+
         }
 
-       
+
 
 
         private void reset_Click(object sender, EventArgs e)
@@ -126,7 +146,8 @@ namespace QuanLy_HS_GV_THPT
             txtDiaChi.Text = "";
             txtPhone.Text = "";
             txtDate.Text = "1/1/1900";
-            txtMaLop.Text = "";
+            cbbML.Text = "";
+            textBox1.Text = "";
             txtTimKiem.Text = "";
             loadData();
         }
@@ -161,7 +182,7 @@ namespace QuanLy_HS_GV_THPT
             {
                 dta.Close();
                 command = connection.CreateCommand();
-                command.CommandText = "Insert into HOCSINH  values('" + txtMaHS.Text + "', N'" + txtTenHS.Text + "','" + txtGioiTinh.Text + "', N'" + txtDiaChi.Text + "' , '" + txtPhone.Text + "', '" + txtDate.Text + "', '" + txtMaLop.Text + "' )";
+                command.CommandText = "Insert into HOCSINH  values('" + txtMaHS.Text + "', N'" + txtTenHS.Text + "','" + txtGioiTinh.Text + "', N'" + txtDiaChi.Text + "' , '" + txtPhone.Text + "', '" + txtDate.Text + "', '" + cbbML.Text + "' )";
                 command.ExecuteNonQuery();
                 loadData();
             }
@@ -180,7 +201,36 @@ namespace QuanLy_HS_GV_THPT
             txtDiaChi.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
             txtPhone.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
             txtDate.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
-            txtMaLop.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
+            cbbML.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
+        }
+
+
+        public void loadDataCombobox()
+        {
+            var sqlCode1 = "Select TenLop from LOP";
+
+            SqlCommand cmd = new SqlCommand(sqlCode1, connection);
+            ///cmd.ExecuteNonQuery();
+
+            var dr = cmd.ExecuteReader();
+            var dt = new DataTable();
+            dt.Load(dr);
+            dr.Dispose();
+            cbbML.ValueMember = "TenLop";
+            cbbML.DataSource = dt;
+        }
+
+        private void cbbML_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string sqlCode = "SELECT MaLop FROM LOP WHERE TenLop = '" + cbbML.SelectedValue.ToString() + "'";
+
+            SqlCommand cmd = new SqlCommand(sqlCode, connection);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                textBox1.Text = dr.GetValue(0).ToString();
+            }
+            dr.Close();
         }
     }
 }

@@ -31,8 +31,15 @@ namespace QuanLy_HS_GV_THPT
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyGV));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.reset = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.helpBTN = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ReturnGV = new System.Windows.Forms.Button();
+            this.Search = new System.Windows.Forms.Button();
+            this.Xoa = new System.Windows.Forms.Button();
+            this.Sua = new System.Windows.Forms.Button();
+            this.Them = new System.Windows.Forms.Button();
             this.txtDate = new System.Windows.Forms.DateTimePicker();
             this.txtGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtMaGV = new System.Windows.Forms.TextBox();
@@ -45,13 +52,6 @@ namespace QuanLy_HS_GV_THPT
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.reset = new System.Windows.Forms.Button();
-            this.helpBTN = new System.Windows.Forms.Button();
-            this.ReturnGV = new System.Windows.Forms.Button();
-            this.Search = new System.Windows.Forms.Button();
-            this.Xoa = new System.Windows.Forms.Button();
-            this.Sua = new System.Windows.Forms.Button();
-            this.Them = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -89,30 +89,128 @@ namespace QuanLy_HS_GV_THPT
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
+            // reset
+            // 
+            this.reset.Image = ((System.Drawing.Image)(resources.GetObject("reset.Image")));
+            this.reset.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.reset.Location = new System.Drawing.Point(229, 416);
+            this.reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(92, 31);
+            this.reset.TabIndex = 19;
+            this.reset.Text = "Reset";
+            this.reset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.reset.UseVisualStyleBackColor = true;
+            this.reset.Click += new System.EventHandler(this.reset_Click);
+            // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(140, 324);
+            this.txtSearch.Location = new System.Drawing.Point(176, 319);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(144, 25);
+            this.txtSearch.Size = new System.Drawing.Size(145, 25);
             this.txtSearch.TabIndex = 18;
+            // 
+            // helpBTN
+            // 
+            this.helpBTN.BackColor = System.Drawing.Color.White;
+            this.helpBTN.Image = global::QuanLy_HS_GV_THPT.Properties.Resources.help;
+            this.helpBTN.Location = new System.Drawing.Point(288, 3);
+            this.helpBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.helpBTN.Name = "helpBTN";
+            this.helpBTN.Size = new System.Drawing.Size(33, 30);
+            this.helpBTN.TabIndex = 18;
+            this.helpBTN.UseVisualStyleBackColor = false;
+            this.helpBTN.Click += new System.EventHandler(this.helpBTN_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(319, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(347, 0);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(858, 458);
+            this.dataGridView1.Size = new System.Drawing.Size(830, 458);
             this.dataGridView1.TabIndex = 17;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // ReturnGV
+            // 
+            this.ReturnGV.BackColor = System.Drawing.Color.White;
+            this.ReturnGV.Image = ((System.Drawing.Image)(resources.GetObject("ReturnGV.Image")));
+            this.ReturnGV.Location = new System.Drawing.Point(0, 0);
+            this.ReturnGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ReturnGV.Name = "ReturnGV";
+            this.ReturnGV.Size = new System.Drawing.Size(44, 37);
+            this.ReturnGV.TabIndex = 16;
+            this.ReturnGV.UseVisualStyleBackColor = false;
+            this.ReturnGV.Click += new System.EventHandler(this.ReturnGV_Click);
+            // 
+            // Search
+            // 
+            this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search.Image = ((System.Drawing.Image)(resources.GetObject("Search.Image")));
+            this.Search.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Search.Location = new System.Drawing.Point(11, 318);
+            this.Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Search.Name = "Search";
+            this.Search.Size = new System.Drawing.Size(106, 30);
+            this.Search.TabIndex = 15;
+            this.Search.Text = "Tìm Kiếm";
+            this.Search.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Search.UseVisualStyleBackColor = true;
+            this.Search.Click += new System.EventHandler(this.TimKiem_Click);
+            // 
+            // Xoa
+            // 
+            this.Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Xoa.Image = ((System.Drawing.Image)(resources.GetObject("Xoa.Image")));
+            this.Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Xoa.Location = new System.Drawing.Point(229, 363);
+            this.Xoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Xoa.Name = "Xoa";
+            this.Xoa.Size = new System.Drawing.Size(92, 30);
+            this.Xoa.TabIndex = 14;
+            this.Xoa.Text = "Xóa";
+            this.Xoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Xoa.UseVisualStyleBackColor = true;
+            this.Xoa.Click += new System.EventHandler(this.Xoa_Click);
+            // 
+            // Sua
+            // 
+            this.Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sua.Image = ((System.Drawing.Image)(resources.GetObject("Sua.Image")));
+            this.Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Sua.Location = new System.Drawing.Point(11, 414);
+            this.Sua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Sua.Name = "Sua";
+            this.Sua.Size = new System.Drawing.Size(89, 31);
+            this.Sua.TabIndex = 13;
+            this.Sua.Text = "Sửa";
+            this.Sua.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Sua.UseVisualStyleBackColor = true;
+            this.Sua.Click += new System.EventHandler(this.Sua_Click);
+            // 
+            // Them
+            // 
+            this.Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Them.Image = ((System.Drawing.Image)(resources.GetObject("Them.Image")));
+            this.Them.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Them.Location = new System.Drawing.Point(11, 363);
+            this.Them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Them.Name = "Them";
+            this.Them.Size = new System.Drawing.Size(89, 30);
+            this.Them.TabIndex = 12;
+            this.Them.Text = "Thêm";
+            this.Them.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Them.UseVisualStyleBackColor = true;
+            this.Them.Click += new System.EventHandler(this.Them_Click_1);
             // 
             // txtDate
             // 
             this.txtDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDate.Location = new System.Drawing.Point(139, 182);
+            this.txtDate.Location = new System.Drawing.Point(176, 182);
             this.txtDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(145, 25);
@@ -124,7 +222,7 @@ namespace QuanLy_HS_GV_THPT
             this.txtGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nu"});
-            this.txtGioiTinh.Location = new System.Drawing.Point(139, 138);
+            this.txtGioiTinh.Location = new System.Drawing.Point(176, 135);
             this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Size = new System.Drawing.Size(145, 28);
@@ -133,7 +231,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             // txtMaGV
             // 
-            this.txtMaGV.Location = new System.Drawing.Point(139, 48);
+            this.txtMaGV.Location = new System.Drawing.Point(176, 48);
             this.txtMaGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaGV.Name = "txtMaGV";
             this.txtMaGV.Size = new System.Drawing.Size(145, 25);
@@ -141,7 +239,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             // txtTenGV
             // 
-            this.txtTenGV.Location = new System.Drawing.Point(139, 94);
+            this.txtTenGV.Location = new System.Drawing.Point(176, 94);
             this.txtTenGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenGV.Name = "txtTenGV";
             this.txtTenGV.Size = new System.Drawing.Size(145, 25);
@@ -149,7 +247,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(139, 229);
+            this.txtPhone.Location = new System.Drawing.Point(176, 229);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(145, 25);
@@ -157,7 +255,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(139, 272);
+            this.txtDiaChi.Location = new System.Drawing.Point(176, 272);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(145, 25);
@@ -223,109 +321,11 @@ namespace QuanLy_HS_GV_THPT
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã GV";
             // 
-            // reset
-            // 
-            this.reset.Image = ((System.Drawing.Image)(resources.GetObject("reset.Image")));
-            this.reset.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.reset.Location = new System.Drawing.Point(182, 414);
-            this.reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.reset.Name = "reset";
-            this.reset.Size = new System.Drawing.Size(102, 31);
-            this.reset.TabIndex = 19;
-            this.reset.Text = "Reset";
-            this.reset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.reset.UseVisualStyleBackColor = true;
-            this.reset.Click += new System.EventHandler(this.reset_Click);
-            // 
-            // helpBTN
-            // 
-            this.helpBTN.BackColor = System.Drawing.Color.White;
-            this.helpBTN.Image = global::QuanLy_HS_GV_THPT.Properties.Resources.help;
-            this.helpBTN.Location = new System.Drawing.Point(221, 0);
-            this.helpBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.helpBTN.Name = "helpBTN";
-            this.helpBTN.Size = new System.Drawing.Size(33, 30);
-            this.helpBTN.TabIndex = 18;
-            this.helpBTN.UseVisualStyleBackColor = false;
-            this.helpBTN.Click += new System.EventHandler(this.helpBTN_Click);
-            // 
-            // ReturnGV
-            // 
-            this.ReturnGV.BackColor = System.Drawing.Color.White;
-            this.ReturnGV.Image = ((System.Drawing.Image)(resources.GetObject("ReturnGV.Image")));
-            this.ReturnGV.Location = new System.Drawing.Point(0, 0);
-            this.ReturnGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ReturnGV.Name = "ReturnGV";
-            this.ReturnGV.Size = new System.Drawing.Size(44, 37);
-            this.ReturnGV.TabIndex = 16;
-            this.ReturnGV.UseVisualStyleBackColor = false;
-            this.ReturnGV.Click += new System.EventHandler(this.ReturnGV_Click);
-            // 
-            // Search
-            // 
-            this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search.Image = ((System.Drawing.Image)(resources.GetObject("Search.Image")));
-            this.Search.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Search.Location = new System.Drawing.Point(11, 318);
-            this.Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(107, 31);
-            this.Search.TabIndex = 15;
-            this.Search.Text = "Tìm Kiếm";
-            this.Search.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Search.UseVisualStyleBackColor = true;
-            this.Search.Click += new System.EventHandler(this.TimKiem_Click);
-            // 
-            // Xoa
-            // 
-            this.Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Xoa.Image = ((System.Drawing.Image)(resources.GetObject("Xoa.Image")));
-            this.Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Xoa.Location = new System.Drawing.Point(182, 363);
-            this.Xoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Xoa.Name = "Xoa";
-            this.Xoa.Size = new System.Drawing.Size(102, 30);
-            this.Xoa.TabIndex = 14;
-            this.Xoa.Text = "Xóa";
-            this.Xoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Xoa.UseVisualStyleBackColor = true;
-            this.Xoa.Click += new System.EventHandler(this.Xoa_Click);
-            // 
-            // Sua
-            // 
-            this.Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sua.Image = ((System.Drawing.Image)(resources.GetObject("Sua.Image")));
-            this.Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Sua.Location = new System.Drawing.Point(11, 414);
-            this.Sua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Sua.Name = "Sua";
-            this.Sua.Size = new System.Drawing.Size(107, 31);
-            this.Sua.TabIndex = 13;
-            this.Sua.Text = "Sửa";
-            this.Sua.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Sua.UseVisualStyleBackColor = true;
-            this.Sua.Click += new System.EventHandler(this.Sua_Click);
-            // 
-            // Them
-            // 
-            this.Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Them.Image = ((System.Drawing.Image)(resources.GetObject("Them.Image")));
-            this.Them.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Them.Location = new System.Drawing.Point(11, 363);
-            this.Them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Them.Name = "Them";
-            this.Them.Size = new System.Drawing.Size(107, 30);
-            this.Them.TabIndex = 12;
-            this.Them.Text = "Thêm";
-            this.Them.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Them.UseVisualStyleBackColor = true;
-            this.Them.Click += new System.EventHandler(this.Them_Click_1);
-            // 
             // QuanLyGV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 457);
+            this.ClientSize = new System.Drawing.Size(1174, 456);
             this.Controls.Add(this.groupBox2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "QuanLyGV";

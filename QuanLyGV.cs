@@ -110,6 +110,8 @@ namespace QuanLy_HS_GV_THPT
             txtDate.Text = "1/1/1900";
             txtPhone.Text = "";
             txtDiaChi.Text = "";
+            txtSearch.Text = "";
+            loadData();
         }
 
        
@@ -117,11 +119,10 @@ namespace QuanLy_HS_GV_THPT
 
         private void TimKiem_Click(object sender, EventArgs e)
         {
-            // tim kiem
+            // tim kiem theo mã giáo viên
             SqlConnection connection = new SqlConnection(dataSource);
             connection.Open();
-            string magiaovien = txtSearch.Text;
-            string sql = "select MaGV from GIAOVIEN where MaGV = '" + txtSearch.Text + "'";
+           string sql = "select MaGV from GIAOVIEN where MaGV = '" + txtSearch.Text + "' ";
 
             SqlCommand cmd = new SqlCommand(sql, connection);
             SqlDataReader data = cmd.ExecuteReader();
@@ -130,17 +131,39 @@ namespace QuanLy_HS_GV_THPT
             {
                 data.Close();
                 command = connection.CreateCommand();
-                command.CommandText = "select * from GIAOVIEN where MaGV='" + txtSearch.Text + "'";
+                command.CommandText = "select * from GIAOVIEN where MaGV= '" + txtSearch.Text + "' ";
                 adapter.SelectCommand = command;
                 table.Clear();
                 adapter.Fill(table);
                 dataGridView1.DataSource = table;
             }
-            else
+           
+
+            // tim kiem theo tên giáo viên
+            SqlConnection connection1 = new SqlConnection(dataSource);
+            connection1.Open();
+            string sql1 = "select TenGV from GIAOVIEN where TenGV = '" + txtSearch.Text + "' ";
+
+            SqlCommand cmd1 = new SqlCommand(sql1, connection1);
+            SqlDataReader data1 = cmd1.ExecuteReader();
+
+            if (data1.Read() == true)
             {
-                MessageBox.Show("Không có mã giáo viên cần tìm!");
+                data1.Close();
+                command = connection1.CreateCommand();
+                command.CommandText = "select * from GIAOVIEN where TenGV= '" + txtSearch.Text + "' ";
+                adapter.SelectCommand = command;
+                table.Clear();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
             }
+            else { MessageBox.Show("Không có nhân viên cần tìm!"); }
+
+
+
         }
+
+
         private void helpBTN_Click(object sender, EventArgs e)
         {
             var helperDialog = new Helper.Helpers();

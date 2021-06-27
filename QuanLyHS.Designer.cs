@@ -32,7 +32,6 @@ namespace QuanLy_HS_GV_THPT
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyHS));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtMaLop = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,6 +55,8 @@ namespace QuanLy_HS_GV_THPT
             this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.cbbML = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -64,8 +65,9 @@ namespace QuanLy_HS_GV_THPT
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Orange;
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.cbbML);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtMaLop);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtDate);
@@ -105,13 +107,6 @@ namespace QuanLy_HS_GV_THPT
             this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 22;
             this.label3.Text = "Mã Lớp";
-            // 
-            // txtMaLop
-            // 
-            this.txtMaLop.Location = new System.Drawing.Point(152, 311);
-            this.txtMaLop.Name = "txtMaLop";
-            this.txtMaLop.Size = new System.Drawing.Size(134, 25);
-            this.txtMaLop.TabIndex = 21;
             // 
             // panel1
             // 
@@ -181,7 +176,7 @@ namespace QuanLy_HS_GV_THPT
             // 
             this.helpBTN.BackColor = System.Drawing.Color.White;
             this.helpBTN.Image = global::QuanLy_HS_GV_THPT.Properties.Resources.help;
-            this.helpBTN.Location = new System.Drawing.Point(230, 2);
+            this.helpBTN.Location = new System.Drawing.Point(253, 4);
             this.helpBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.helpBTN.Name = "helpBTN";
             this.helpBTN.Size = new System.Drawing.Size(33, 30);
@@ -355,6 +350,22 @@ namespace QuanLy_HS_GV_THPT
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã HS";
             // 
+            // cbbML
+            // 
+            this.cbbML.FormattingEnabled = true;
+            this.cbbML.Location = new System.Drawing.Point(180, 311);
+            this.cbbML.Name = "cbbML";
+            this.cbbML.Size = new System.Drawing.Size(106, 28);
+            this.cbbML.TabIndex = 23;
+            this.cbbML.SelectedIndexChanged += new System.EventHandler(this.cbbML_SelectedIndexChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(95, 311);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(79, 25);
+            this.textBox1.TabIndex = 24;
+            // 
             // QuanLyHS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -401,6 +412,7 @@ namespace QuanLy_HS_GV_THPT
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtMaLop;
+        private System.Windows.Forms.ComboBox cbbML;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
