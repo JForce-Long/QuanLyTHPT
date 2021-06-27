@@ -17,7 +17,7 @@ namespace QuanLy_HS_GV_THPT
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
-        string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+        string dataSource = @"Data Source=NGUYEN;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
         //SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
@@ -196,6 +196,7 @@ namespace QuanLy_HS_GV_THPT
                 command.CommandText = "Insert into GIAOVIEN values('" + txtMaGV.Text + "', N'" + txtTenGV.Text + "','" + txtGioiTinh.Text + "', '"+ txtDate.Text+"', '" + txtPhone.Text + "', N'" + txtDiaChi.Text + "'  )";
                 command.ExecuteNonQuery();
                 loadData();
+
             }
         }
 
