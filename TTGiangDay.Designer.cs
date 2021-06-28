@@ -31,6 +31,9 @@ namespace QuanLy_HS_GV_THPT
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Thông_Tin_Giảng_Dạy));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.searchtt = new System.Windows.Forms.Button();
+            this.cmbtt = new System.Windows.Forms.ComboBox();
+            this.txttt = new System.Windows.Forms.TextBox();
             this.btnReturn = new System.Windows.Forms.Button();
             this.InDS = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -40,6 +43,9 @@ namespace QuanLy_HS_GV_THPT
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.searchtt);
+            this.groupBox1.Controls.Add(this.cmbtt);
+            this.groupBox1.Controls.Add(this.txttt);
             this.groupBox1.Controls.Add(this.btnReturn);
             this.groupBox1.Controls.Add(this.InDS);
             this.groupBox1.Controls.Add(this.dataGridView1);
@@ -50,6 +56,47 @@ namespace QuanLy_HS_GV_THPT
             this.groupBox1.Size = new System.Drawing.Size(1055, 599);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // searchtt
+            // 
+            this.searchtt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchtt.Image = ((System.Drawing.Image)(resources.GetObject("searchtt.Image")));
+            this.searchtt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.searchtt.Location = new System.Drawing.Point(887, 14);
+            this.searchtt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.searchtt.Name = "searchtt";
+            this.searchtt.Size = new System.Drawing.Size(139, 43);
+            this.searchtt.TabIndex = 96;
+            this.searchtt.Text = "Tìm kiếm";
+            this.searchtt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.searchtt.UseVisualStyleBackColor = true;
+            this.searchtt.Click += new System.EventHandler(this.searchtt_Click);
+            // 
+            // cmbtt
+            // 
+            this.cmbtt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbtt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(72)))), ((int)(((byte)(39)))));
+            this.cmbtt.FormattingEnabled = true;
+            this.cmbtt.Items.AddRange(new object[] {
+            "Mã lớp",
+            "Tên lớp"});
+            this.cmbtt.Location = new System.Drawing.Point(516, 29);
+            this.cmbtt.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbtt.Name = "cmbtt";
+            this.cmbtt.Size = new System.Drawing.Size(148, 28);
+            this.cmbtt.TabIndex = 95;
+            // 
+            // txttt
+            // 
+            this.txttt.BackColor = System.Drawing.Color.White;
+            this.txttt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txttt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(72)))), ((int)(((byte)(39)))));
+            this.txttt.Location = new System.Drawing.Point(672, 29);
+            this.txttt.Margin = new System.Windows.Forms.Padding(4);
+            this.txttt.Name = "txttt";
+            this.txttt.Size = new System.Drawing.Size(194, 27);
+            this.txttt.TabIndex = 94;
             // 
             // btnReturn
             // 
@@ -97,6 +144,7 @@ namespace QuanLy_HS_GV_THPT
             this.Text = "Thông_Tin_Giảng_Dạy";
             this.Load += new System.EventHandler(this.TTGiangDay_Load);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -108,5 +156,8 @@ namespace QuanLy_HS_GV_THPT
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button InDS;
+        private System.Windows.Forms.Button searchtt;
+        private System.Windows.Forms.ComboBox cmbtt;
+        private System.Windows.Forms.TextBox txttt;
     }
 }

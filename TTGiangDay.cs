@@ -23,7 +23,7 @@ namespace QuanLy_HS_GV_THPT
         void loadData()
         {
             command = connection.CreateCommand();
-            command.CommandText = "select MaHS, TenHS, GioiTinh, Date, LOP.MaLop, TenLop, MaGV from HOCSINH,LOP where HOCSINH.MaLop = LOP.MaLop";
+            command.CommandText = "select MaHS, TenHS, GioiTinh, Date, LOP.MaLop, TenLop, MaGV from HOCSINH,LOP where HOCSINH.MaLop = LOP.MaLop order by MaHS";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
@@ -55,6 +55,53 @@ namespace QuanLy_HS_GV_THPT
             MessageBox.Show("In danh sách thành công!");
         }
 
-       
+        private void searchtt_Click(object sender, EventArgs e)
+        {
+            if (cmbtt.SelectedItem == "Mã lớp")
+            {
+                SqlConnection connection = new SqlConnection(dataSource);
+                connection.Open();
+                string sql = "select * from LOP where MaLop = '" + txttt.Text + "'";
+
+                SqlCommand cmd = new SqlCommand(sql, connection);
+                cmd.ExecuteNonQuery();
+                SqlDataReader data = cmd.ExecuteReader();
+
+                if (data.Read() == true)
+                {
+                    data.Close();
+                    command = connection.CreateCommand();
+                    command.CommandText = "select MaHS, TenHS, GioiTinh, Date, LOP.MaLop, TenLop, MaGV from HOCSINH,LOP where HOCSINH.MaLop = LOP.MaLop and LOP.MaLop='" + txttt.Text + "'";
+                    adapter.SelectCommand = command;
+                    table.Clear();
+                    adapter.Fill(table);
+                    dataGridView1.DataSource = table;
+                }
+                else { MessageBox.Show("Không có thông tin cần tìm!"); }
+            }
+
+            if (cmbtt.SelectedItem == "Tên lớp")
+            {
+                SqlConnection connection = new SqlConnection(dataSource);
+                connection.Open();
+                string sql = "select * from LOP where TenLop = '" + txttt.Text + "'";
+
+                SqlCommand cmd = new SqlCommand(sql, connection);
+                cmd.ExecuteNonQuery();
+                SqlDataReader data = cmd.ExecuteReader();
+
+                if (data.Read() == true)
+                {
+                    data.Close();
+                    command = connection.CreateCommand();
+                    command.CommandText = "MaHS, TenHS, GioiTinh, Date, LOP.MaLop, TenLop, MaGV from HOCSINH,LOP where HOCSINH.MaLop = LOP.MaLop and TenLop='" + txttt.Text + "'";
+                    adapter.SelectCommand = command;
+                    table.Clear();
+                    adapter.Fill(table);
+                    dataGridView1.DataSource = table;
+                }
+                else { MessageBox.Show("Không có thông tin cần tìm!"); }
+            }
+        }
     }
 }
