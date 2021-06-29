@@ -11,7 +11,7 @@ namespace QuanLy_HS_GV_THPT
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
-        string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+       // string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
         //SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
@@ -33,7 +33,7 @@ namespace QuanLy_HS_GV_THPT
 
         private void TTGiangDay_Load(object sender, EventArgs e)
         {
-            connection = new SqlConnection(dataSource);
+            connection = new SqlConnection(Helper.Define.dataSource);
             connection.Open();
             loadData();
         }
@@ -59,7 +59,7 @@ namespace QuanLy_HS_GV_THPT
         {
             if (cmbtt.SelectedItem == "Mã lớp")
             {
-                SqlConnection connection = new SqlConnection(dataSource);
+                SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
                 connection.Open();
                 string sql = "select * from LOP where MaLop = '" + txttt.Text + "'";
 
@@ -82,7 +82,7 @@ namespace QuanLy_HS_GV_THPT
 
             if (cmbtt.SelectedItem == "Tên lớp")
             {
-                SqlConnection connection = new SqlConnection(dataSource);
+                SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
                 connection.Open();
                 string sql = "select * from LOP where TenLop = '" + txttt.Text + "'";
 

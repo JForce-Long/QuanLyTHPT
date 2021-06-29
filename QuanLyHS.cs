@@ -16,7 +16,7 @@ namespace QuanLy_HS_GV_THPT
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
-        string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
+        //string dataSource = @"Data Source=DESKTOP-9JCB5HS;Initial Catalog=quanly_Hs_Gv_THPT_3F;Integrated Security=True";
        // SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
@@ -54,7 +54,7 @@ namespace QuanLy_HS_GV_THPT
         }
         private void QuanLyHS_Load(object sender, EventArgs e)
         {
-            connection = new SqlConnection(dataSource);
+            connection = new SqlConnection(Helper.Define.dataSource);
             connection.Open();
             loadData();
             loadDataCombobox();
@@ -93,7 +93,7 @@ namespace QuanLy_HS_GV_THPT
         private void TimKiem_Click(object sender, EventArgs e)
         {
             // tim kiem mã hoc sinh
-            SqlConnection connection = new SqlConnection(dataSource); 
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource); 
             connection.Open();
             string sql = "select MaHS from HOCSINH where MaHS = '" + txtTimKiem.Text + "'";
 
@@ -113,7 +113,7 @@ namespace QuanLy_HS_GV_THPT
            
 
             // tim kiem tên hoc sinh
-            SqlConnection connection1 = new SqlConnection(dataSource);
+            SqlConnection connection1 = new SqlConnection(Helper.Define.dataSource);
             connection1.Open();
             string sql1 = "select TenHS from HOCSINH where TenHS = '" + txtTimKiem.Text + "'";
 
@@ -130,8 +130,6 @@ namespace QuanLy_HS_GV_THPT
                 adapter.Fill(table);
                 dataGridView1.DataSource = table;
             }
-            else { MessageBox.Show("Không có nhân viên cần tìm!"); }
-
 
         }
 

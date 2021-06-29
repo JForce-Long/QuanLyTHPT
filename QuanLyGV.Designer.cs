@@ -155,7 +155,7 @@ namespace QuanLy_HS_GV_THPT
             this.Search.Location = new System.Drawing.Point(11, 318);
             this.Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(106, 30);
+            this.Search.Size = new System.Drawing.Size(115, 30);
             this.Search.TabIndex = 15;
             this.Search.Text = "Tìm Kiếm";
             this.Search.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -185,7 +185,7 @@ namespace QuanLy_HS_GV_THPT
             this.Sua.Location = new System.Drawing.Point(11, 414);
             this.Sua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sua.Name = "Sua";
-            this.Sua.Size = new System.Drawing.Size(89, 31);
+            this.Sua.Size = new System.Drawing.Size(98, 31);
             this.Sua.TabIndex = 13;
             this.Sua.Text = "Sửa";
             this.Sua.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -200,7 +200,7 @@ namespace QuanLy_HS_GV_THPT
             this.Them.Location = new System.Drawing.Point(11, 363);
             this.Them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Them.Name = "Them";
-            this.Them.Size = new System.Drawing.Size(89, 30);
+            this.Them.Size = new System.Drawing.Size(98, 30);
             this.Them.TabIndex = 12;
             this.Them.Text = "Thêm";
             this.Them.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
