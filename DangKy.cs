@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+print(abbbababbabbababa)
 namespace QuanLy_HS_GV_THPT
 {
     public partial class DangKy : Form
@@ -32,7 +32,7 @@ namespace QuanLy_HS_GV_THPT
         {
 
         }
-
+print(asdwwqqffgefe)
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
