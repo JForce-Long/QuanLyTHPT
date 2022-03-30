@@ -32,7 +32,7 @@ namespace QuanLy_HS_GV_THPT
         {
 
         }
-
+print(asdwwqqffgefe)
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
